@@ -73,6 +73,27 @@
                 android:minLines="3"
                 style="@style/ComposeEditTextLarge"
                 />
+            <LinearLayout
+                android:id="@+id/encryption"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/key_text"
+                    android:text="default" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Encrypt"
+                    android:onClick="encryptMessage"
+                    android:id="@+id/encrypt_button"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
 
             <view
                 class="com.fsck.k9.ui.EolConvertingEditText"
