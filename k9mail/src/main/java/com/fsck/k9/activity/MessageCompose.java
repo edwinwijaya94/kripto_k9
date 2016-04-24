@@ -1,5 +1,6 @@
 package com.fsck.k9.activity;
 
+import com.blockcipher.*;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -57,6 +58,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blockcipher.newblockchipper.NewBlockChipper;
 import com.fsck.k9.Account;
 import com.fsck.k9.Account.MessageFormat;
 import com.fsck.k9.Account.QuoteStyle;
@@ -2794,5 +2796,17 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         } catch (SendIntentException e) {
             e.printStackTrace();
         }
+    }
+
+    // ENKRIPSI
+    public void encryptMessage(View v){
+        EditText key_text = (EditText)findViewById(R.id.key_text);
+        String key = key_text.getText().toString();
+        TextView message_content = (TextView)findViewById(R.id.message_content);
+        String message = message_content.getText().toString();
+        NewBlockChipper nbc = new NewBlockChipper(message, key);
+        String result = nbc.encrypt();
+        message_content.setText(result);
+        Log.d("result: ",message_content.getText().toString());
     }
 }
