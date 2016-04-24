@@ -73,16 +73,18 @@
                 android:minLines="3"
                 style="@style/ComposeEditTextLarge"
                 />
+
+            <!-- Encryption Feature-->
             <LinearLayout
                 android:id="@+id/encryption"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <EditText
-                    android:layout_width="295dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
                     android:id="@+id/key_text"
-                    android:text="default" />
+                    android:text="encrypt" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -92,8 +94,35 @@
                     android:id="@+id/encrypt_button"
                     android:layout_gravity="right" />
 
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/encrypt_toggle"
+                    android:checked="false" />
+
             </LinearLayout>
 
+            <!-- Digital Signature Feature-->
+            <LinearLayout
+                android:id="@+id/digitalsignature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dsa_private_key"
+                    android:text="sign" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign mail"
+                    android:onClick="signMessage"
+                    android:id="@+id/dsa_button"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
 
             <view
                 class="com.fsck.k9.ui.EolConvertingEditText"
