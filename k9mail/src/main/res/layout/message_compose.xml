@@ -106,7 +106,7 @@
                     android:layout_width="240dp"
                     android:layout_height="match_parent"
                     android:id="@+id/dsa_private_key"
-                    android:text="sign" />
+                    android:text="aaf723dc60b31" />
 
                 <Button
                     android:layout_width="wrap_content"
