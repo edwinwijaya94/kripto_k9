@@ -58,7 +58,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.blockcipher.newblockchipper.NewBlockChipper;
+import com.blockcipher.blockslidercipher.BlockSliderChipper;
 import com.fsck.k9.Account;
 import com.fsck.k9.Account.MessageFormat;
 import com.fsck.k9.Account.QuoteStyle;
@@ -2804,7 +2804,9 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         String key = key_text.getText().toString();
         TextView message_content = (TextView)findViewById(R.id.message_content);
         String message = message_content.getText().toString();
-        NewBlockChipper nbc = new NewBlockChipper(message, key);
+        BlockSliderChipper nbc = new BlockSliderChipper();
+        nbc.setPlainText(message);
+        nbc.setKey(key);
         String result = nbc.encrypt();
         message_content.setText(result);
         Log.d("result: ",message_content.getText().toString());

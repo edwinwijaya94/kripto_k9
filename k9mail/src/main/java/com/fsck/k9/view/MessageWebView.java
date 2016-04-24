@@ -1,13 +1,20 @@
 package com.fsck.k9.view;
 
+
+import com.blockcipher.*;
+
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.webkit.WebSettings;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blockcipher.blockslidercipher.BlockSliderChipper;
 import com.fsck.k9.K9;
 import com.fsck.k9.R;
 import com.fsck.k9.helper.HtmlConverter;
@@ -144,6 +151,21 @@ public class MessageWebView extends RigidWebView {
         } catch (Exception e) {
             Log.e(K9.LOG_TAG, "Exception in emulateShiftHeld()", e);
         }
+    }
+
+    // DEKRIPSI
+    public void decryptMessage(View v){
+
+        EditText key_text = (EditText)findViewById(R.id.key_text);
+        String key = key_text.getText().toString();
+        TextView message_content = (TextView)findViewById(R.id.message_content);
+        String message = message_content.getText().toString();
+        BlockSliderChipper nbc = new BlockSliderChipper();
+        nbc.setEncryptedText(message);
+        nbc.setKey(key);
+        String result = nbc.decrypt();
+        message_content.setText(result);
+        Log.d("result: ",message_content.getText().toString());
     }
 
 }

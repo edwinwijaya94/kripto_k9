@@ -38,6 +38,46 @@
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent" />
 
+            <LinearLayout
+                android:id="@+id/decryption"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/key_text"
+                    android:text="" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Decrypt"
+                    android:id="@+id/decrypt_button"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/digitalsignature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/public_key_text"
+                    android:text="" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verify"
+                    android:id="@+id/verify_button"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
             <!-- Attachments area -->
             <LinearLayout
                 android:id="@+id/attachments_container"

@@ -127,7 +127,14 @@ public class Key {
                 count++;
             } 
         }
-        
+        int idx = 0;
+        for(int i=0; i<keyBlock.length; i++) {
+            for(int j=0; j<keyBlock[i].getBits().length; j++) {
+                this.bits[idx] = keyBlock[i].getBits()[j];
+                idx++;
+            }
+        }
+//        System.out.println(tempBits.length);
     }
     
     /**
@@ -186,8 +193,10 @@ public class Key {
         for(int i = 0;i<a.length;i++){
             System.out.println(a[i]);
         }
+        System.out.println(keyy.getKeyBlock());
         System.out.println("encrypted " + keyy.getEncryptedText());
         System.out.println("keyText " + keyy.getKeyText());
         System.out.println("vigkey"+ keyy.vigkeytemp);
+        System.out.println(keyy);
     }
 }
