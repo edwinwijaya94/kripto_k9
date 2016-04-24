@@ -1,5 +1,7 @@
 package com.blockcipher.Bits;
 
+import com.blockcipher.Bits.Bit;
+
 import static java.lang.Math.random;
 
 /**
@@ -22,6 +24,15 @@ public class Block {
     public Block(Bit[] bits) {
         this.bits = bits;
         this.size = bits.length;
+    }
+    
+    public Block(Block b) {
+        this.size = b.size;
+        bits = new Bit[size];
+        for(int i=0; i<size; i++) {
+            bits[i] = new Bit();
+            bits[i].setValue(b.getBits()[i].getValue());
+        }
     }
     
     public int getSize() {

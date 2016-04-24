@@ -208,4 +208,25 @@
         android:layout_marginBottom="4dip"
         android:background="@drawable/divider_horizontal_email" />
 
+    <!--<LinearLayout-->
+        <!--android:id="@+id/encryption"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<EditText-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/key_text"-->
+            <!--android:text="default" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Decrypt"-->
+            <!--android:onClick="decryptMessage"-->
+            <!--android:id="@+id/encrypt_button"-->
+            <!--android:layout_gravity="right" />-->
+
+    <!--</LinearLayout>-->
+
 </com.fsck.k9.view.MessageHeader>
