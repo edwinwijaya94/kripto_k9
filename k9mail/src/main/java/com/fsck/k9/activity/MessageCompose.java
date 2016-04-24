@@ -1,7 +1,10 @@
 package com.fsck.k9.activity;
 
 import com.blockcipher.*;
+import com.ecdsa2.*;
 
+import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -2809,6 +2812,20 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         nbc.setKey(key);
         String result = nbc.encrypt();
         message_content.setText(result);
+        Log.d("result: ",message_content.getText().toString());
+    }
+
+    // Digital Signature
+    public void signMessage(View v) throws UnsupportedEncodingException {
+        EditText dsa_private_key = (EditText)findViewById(R.id.dsa_private_key);
+        String dsa_key = dsa_private_key.getText().toString();
+        TextView message_content = (TextView)findViewById(R.id.message_content);
+        String message = message_content.getText().toString();
+
+        String signature = ECDSA.sign(message.getBytes(),new BigInteger(dsa_key, 16));
+//        message_content.append("---BEGIN SIGNATURE---\n");
+        message_content.append(signature + "\n");
+//        message_content.append("---END SIGNATURE---\n");
         Log.d("result: ",message_content.getText().toString());
     }
 }

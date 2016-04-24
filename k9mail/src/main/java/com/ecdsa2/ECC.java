@@ -1,19 +1,19 @@
 package com.ecdsa2;
 
 import java.math.BigInteger;
-import util.MathBigInteger;
+//import java.util.MathBigInteger;
 
 public class ECC {
 
 	public static BigInteger NEUTRAL_VALUE = new BigInteger("-9999");
-	public static BigInteger P = new BigInteger("6277101735386680763835789423207666416083908700390324961279"); // as Prim Key
+	public static BigInteger P = new BigInteger("6277101735386680763835789423207666416083908700390324961279"); // as Private Key
 	public static BigInteger R = new BigInteger("6277101735386680763835789423176059013767194773182842284081"); // as Prime Number
 	public static BigInteger A = new BigInteger("-3"); // as A
 	public static BigInteger B = new BigInteger("64210519e59c80e70fa7e9ab72243049feb8deecc146b9b1", 16); // as B
 	public static BigInteger GX = new BigInteger("188da80eb03090f67cbf20eb43a18800f4ff0afd82ff1012", 16); // as Base X
 	public static BigInteger GY = new BigInteger("07192b95ffc8da78631011ed6b24cdd573f977a11e794811", 16); // as Base Y
 	
-	private final static BigInteger p = new BigInteger("6277101735386680763835789423207666416083908700390324961279"); // as Prim Key
+	private final static BigInteger p = new BigInteger("6277101735386680763835789423207666416083908700390324961279"); // as Private Key
 	private final static BigInteger a = new BigInteger("-3"); // as a
 	private final static BigInteger b = new BigInteger("64210519e59c80e70fa7e9ab72243049feb8deecc146b9b1", 16); // as b
 	private final static BigInteger[] g = {new BigInteger("188da80eb03090f67cbf20eb43a18800f4ff0afd82ff1012", 16), new BigInteger("07192b95ffc8da78631011ed6b24cdd573f977a11e794811", 16)}; // as Base Point

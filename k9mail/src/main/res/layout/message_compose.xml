@@ -94,12 +94,6 @@
                     android:id="@+id/encrypt_button"
                     android:layout_gravity="right" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/encrypt_toggle"
-                    android:checked="false" />
-
             </LinearLayout>
 
             <!-- Digital Signature Feature-->
