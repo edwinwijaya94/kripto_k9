@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.blockcipher.newblockchipper;
+package com.blockcipher.blockslidercipher;
 
 import com.blockcipher.Bits.Bit;
 import com.blockcipher.Bits.Block;
@@ -19,25 +19,30 @@ import java.util.logging.Logger;
  * @author William Sentosa
  * @author Randi Chilyon Alfianto
  */
-public class NewBlockChipper {
+public class BlockSliderChipper {
     private Key key;
     private Text text;
     private String result;
     private Block[] blocks;
     
-    public NewBlockChipper() {
+    public BlockSliderChipper() {
         key = new Key();
         text = new Text();
     }
     
-    public NewBlockChipper(String source, String key) {
+    public void setPlainText(String source) {
+        text.setPlainText(source);
+    }
+    
+    public void setEncryptedText(String source) {
+        text.setEncryptedText(source);
+    }
+    
+    public void setKey(String key) {
         try {
-            text = new Text();
-            text.setText(source);
-            this.key = new Key();
             this.key.setKey(key, 128);
         } catch (UnsupportedEncodingException ex) {
-            Logger.getLogger(NewBlockChipper.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(BlockSliderChipper.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -61,10 +66,12 @@ public class NewBlockChipper {
             Block temp = new Block();
             blocks.add(temp);
         }
-        System.out.println(blocks);
+        System.out.println(key);
         Bit[] bitKey = key.getBits();
         ArrayList<Bit[]> subKey = divideBits(bitKey);
         int idx = 0;
+        System.out.println("Text awal");
+        System.out.println(blocks);
         for(int i=0; i<blocks.size(); i+=2) {
             // Bekerja dengan model jaringan feistel
             for(int j=0; j<8; j++) {
@@ -83,25 +90,24 @@ public class NewBlockChipper {
                 idx = 0;
             }
         }
-        System.out.println(blocks);
         Text temp = new Text();
+        System.out.println("Text akhir");
+        System.out.println(blocks);
         temp.setBlocks(blocks);
-        System.out.println("Ukuran Blok = " + blocks.size());
         try {
-            return temp.getText();
+            return temp.getEncryptedText();
         } catch (UnsupportedEncodingException ex) {
-            Logger.getLogger(NewBlockChipper.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(BlockSliderChipper.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
     }
     
     public String decrypt() {
         ArrayList<Block> blocks = text.getBlocks();
-        System.out.println(blocks);
-        System.out.println("Ukuran blok awal : " + blocks.size());
         Bit[] bitKey = key.getBits();
         ArrayList<Bit[]> subKey = divideBits(bitKey);
         int idx = 0;
+        System.out.println(key);
         for(int i=0; i<blocks.size(); i+=2) {
             // Bekerja dengan model jaringan feistel
             for(int j=0; j<8; j++) {
@@ -122,12 +128,10 @@ public class NewBlockChipper {
         }
         Text temp = new Text();
         temp.setBlocks(blocks);
-        System.out.println(blocks);
-        System.out.println("Ukuran Blok = " + blocks.size());
         try {
-            return temp.getText();
+            return temp.getPlainText();
         } catch (UnsupportedEncodingException ex) {
-            Logger.getLogger(NewBlockChipper.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(BlockSliderChipper.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
     }
@@ -136,21 +140,20 @@ public class NewBlockChipper {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String text = "william sentosa dan randi chilyon alfianto";
-        System.out.println("Panjang string : " + text.length());
-        String key = "ifitb";
-        NewBlockChipper chipper;
-        chipper = new NewBlockChipper(text, key);
-        
+        String text = "William Candy Angela";
+        System.out.println(text);
+        String key = "tubes";
+        BlockSliderChipper chipper = new BlockSliderChipper();
+        chipper.setPlainText(text);
+        chipper.setKey(key);
         String result = chipper.encrypt();
-        System.out.println("Panjang result : " + result.length());
-        System.out.println("*** Chipper ***");
         System.out.println(result);
-        NewBlockChipper enchiper = new NewBlockChipper(result, key);
-        result = enchiper.decrypt();
-        System.out.println("*** Dechipper ***");
-        System.out.println(result);
-        System.out.println("Panjang result : " + result.length());
+        String encrypted = result;
+        BlockSliderChipper chipper2 = new BlockSliderChipper();
+        chipper2.setEncryptedText(encrypted);
+        chipper2.setKey("tubes");
+        String textResult = chipper2.decrypt();
+        System.out.println(textResult);
     }
     
 }

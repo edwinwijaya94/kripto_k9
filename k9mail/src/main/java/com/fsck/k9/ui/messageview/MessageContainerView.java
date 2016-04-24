@@ -3,13 +3,16 @@ package com.fsck.k9.ui.messageview;
 import java.util.HashMap;
 import java.util.Map;
 
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
@@ -26,10 +29,14 @@ import android.webkit.WebView;
 import android.webkit.WebView.HitTestResult;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blockcipher.blockslidercipher.BlockSliderChipper;
 import com.fsck.k9.R;
+import com.fsck.k9.activity.MessageInfoHolder;
 import com.fsck.k9.helper.ClipboardManager;
 import com.fsck.k9.helper.Contacts;
 import com.fsck.k9.helper.Utility;
@@ -77,6 +84,10 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
     private String mText;
     private Map<AttachmentViewInfo, AttachmentView> attachments = new HashMap<AttachmentViewInfo, AttachmentView>();
 
+    private String tempMessage = "";
+
+    // variable to hold context
+    private Context context;
 
     @Override
     public void onFinishInflate() {
@@ -88,6 +99,75 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
         mMessageContentView.configure();
         mMessageContentView.setOnCreateContextMenuListener(this);
         mMessageContentView.setVisibility(View.VISIBLE);
+
+        final Button button = (Button) findViewById(R.id.decrypt_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+
+                EditText key_text = (EditText)findViewById(R.id.key_text);
+                Log.d("key Text : ",key_text.getText().toString());
+                String key = key_text.getText().toString();
+//                TextView message_content = (TextView)findViewById(R.id.message_content);
+//                String message = mMessageContentView.toString();
+//                String tempMessage = "";
+//                for(int i=0;i<message.length()-1;i++){
+//                    if(message.charAt(i) == '-'){
+//                        break;
+//                    }
+//                    tempMessage += message.charAt(i);
+//                }
+                BlockSliderChipper nbc = new BlockSliderChipper();
+                nbc.setEncryptedText(tempMessage);
+                nbc.setKey(key);
+                String result = nbc.decrypt();
+//                mMessageContentView.setText(result);
+//                Log.d("result: ", mMessageContentView.toString());
+
+                Context context = getContext();
+
+                AlertDialog.Builder alertDialog2 = new AlertDialog.Builder(context);
+
+                // Setting Dialog Title
+                alertDialog2.setTitle("Message");
+
+                // Setting Dialog Message
+                alertDialog2.setMessage("The Message is ..." + result);
+
+//                // Setting Icon to Dialog
+//                alertDialog2.setIcon(R.drawable.delete);
+
+                // Setting Positive "Yes" Btn
+                alertDialog2.setPositiveButton("YES",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Write your code here to execute after dialog
+                                Toast.makeText(getContext(),
+                                        "You clicked on YES", Toast.LENGTH_SHORT)
+                                        .show();
+                            }
+                        });
+
+                // Setting Negative "NO" Btn
+                alertDialog2.setNegativeButton("NO",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Write your code here to execute after dialog
+                                Toast.makeText(getContext(),
+                                        "You clicked on NO", Toast.LENGTH_SHORT)
+                                        .show();
+                                dialog.cancel();
+                            }
+                        });
+
+                // Showing Alert Dialog
+                alertDialog2.show();
+
+
+
+            }
+        });
+
 
         mAttachmentsContainer = findViewById(R.id.attachments_container);
         mAttachments = (LinearLayout) findViewById(R.id.attachments);
@@ -429,6 +509,20 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
         }
 
         mText = getTextToDisplay(messageViewContainer);
+        Log.d("mtext : ",mText);
+        int count = 0;
+        for (int i=0;i<mText.length()-1;i++){
+            if (count == 0 && mText.charAt(i) == '>'){
+                count++;
+                continue;
+            }
+            if (count == 1 && mText.charAt(i) != '<'){
+                tempMessage += mText.charAt(i);
+            } else if (count == 1 && mText.charAt(i) == '<'){
+                count++;
+            }
+        }
+
         if (mText != null && lookForImages) {
             if (Utility.hasExternalImages(mText) && !isShowingPictures()) {
                 if (automaticallyLoadPictures) {
@@ -621,4 +715,18 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
             out.writeInt((this.showingPictures) ? 1 : 0);
         }
     }
+
+//    // DEKRIPSI
+//    public void decryptMessage(View v){
+//        EditText key_text = (EditText)findViewById(R.id.key_text);
+//        String key = key_text.getText().toString();
+//        TextView message_content = (TextView)findViewById(R.id.message_content);
+//        String message = message_content.getText().toString();
+//        BlockSliderChipper nbc = new BlockSliderChipper();
+//        nbc.setEncryptedText(message);
+//        nbc.setKey(key);
+//        String result = nbc.decrypt();
+//        message_content.setText(result);
+//        Log.d("result: ",message_content.getText().toString());
+//    }
 }

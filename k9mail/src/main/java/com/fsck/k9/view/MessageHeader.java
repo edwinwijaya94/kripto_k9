@@ -17,15 +17,18 @@ import android.text.style.StyleSpan;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.QuickContactBadge;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blockcipher.blockslidercipher.BlockSliderChipper;
 import com.fsck.k9.Account;
 import com.fsck.k9.FontSizes;
 import com.fsck.k9.K9;
@@ -43,7 +46,7 @@ import com.fsck.k9.mail.MessagingException;
 import com.fsck.k9.mail.internet.MimeUtility;
 
 public class MessageHeader extends LinearLayout implements OnClickListener, OnLongClickListener {
-    private Context mContext;
+    private static Context mContext;
     private TextView mFromView;
     private TextView mDateView;
     private TextView mToView;
@@ -489,5 +492,20 @@ public class MessageHeader extends LinearLayout implements OnClickListener, OnLo
 
     public void hideSubjectLine() {
         mSubjectView.setVisibility(GONE);
+    }
+
+    // DEKRIPSI
+    public void decryptMessage(View v){
+
+        EditText key_text = (EditText)findViewById(R.id.key_text);
+        String key = key_text.getText().toString();
+        TextView message_content = (TextView)findViewById(R.id.message_content);
+        String message = message_content.getText().toString();
+        BlockSliderChipper nbc = new BlockSliderChipper();
+        nbc.setEncryptedText(message);
+        nbc.setKey(key);
+        String result = nbc.decrypt();
+        message_content.setText(result);
+        Log.d("result: ",message_content.getText().toString());
     }
 }
