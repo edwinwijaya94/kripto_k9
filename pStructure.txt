@@ -1,0 +1,1522 @@
+Folder PATH listing
+Volume serial number is 8A4A-DC8F
+C:.
+----.gradle
+|   ----2.9
+|       ----taskArtifacts
+----.idea
+|   ----copyright
+|   ----libraries
+----.tx
+----build
+|   ----intermediates
+|       ----dex-cache
+----config
+|   ----checkstyle
+|   ----findbugs
+|   ----lint
+----docs
+----gradle
+|   ----plugins
+|   ----wrapper
+----images
+|   ----drawable-src
+|   ----drawables-pgp
+----k9mail
+|   ----build
+|   |   ----generated
+|   |   |   ----res
+|   |   |   |   ----pngs
+|   |   |   |   |   ----debug
+|   |   |   |   |       ----drawable-anydpi-v21
+|   |   |   |   |       ----drawable-hdpi
+|   |   |   |   |       ----drawable-mdpi
+|   |   |   |   |       ----drawable-xhdpi
+|   |   |   |   ----resValues
+|   |   |   |   |   ----androidTest
+|   |   |   |   ----rs
+|   |   |   |       ----androidTest
+|   |   |   |       |   ----debug
+|   |   |   |       ----debug
+|   |   |   ----source
+|   |   |       ----aidl
+|   |   |       |   ----androidTest
+|   |   |       |   |   ----debug
+|   |   |       |   ----debug
+|   |   |       ----buildConfig
+|   |   |       |   ----androidTest
+|   |   |       |   |   ----debug
+|   |   |       |   |       ----com
+|   |   |       |   |           ----fsck
+|   |   |       |   |               ----k9
+|   |   |       |   |                   ----tests
+|   |   |       |   ----debug
+|   |   |       |       ----com
+|   |   |       |           ----fsck
+|   |   |       |               ----k9
+|   |   |       ----r
+|   |   |       |   ----androidTest
+|   |   |       |   |   ----debug
+|   |   |       |   |       ----android
+|   |   |       |   |       |   ----support
+|   |   |       |   |       |       ----test
+|   |   |       |   |       |           ----espresso
+|   |   |       |   |       |           ----rule
+|   |   |       |   |       ----com
+|   |   |       |   |           ----fsck
+|   |   |       |   |               ----k9
+|   |   |       |   |                   ----tests
+|   |   |       |   ----debug
+|   |   |       |       ----com
+|   |   |       |       |   ----fsck
+|   |   |       |       |   |   ----k9
+|   |   |       |       |   ----handmark
+|   |   |       |       |   |   ----pulltorefresh
+|   |   |       |       |   |       ----library
+|   |   |       |       |   ----larswerkman
+|   |   |       |       |       ----colorpicker
+|   |   |       |       ----de
+|   |   |       |       |   ----cketti
+|   |   |       |       |       ----library
+|   |   |       |       |           ----changelog
+|   |   |       |       ----org
+|   |   |       |           ----openintents
+|   |   |       |               ----openpgp
+|   |   |       ----rs
+|   |   |           ----androidTest
+|   |   |           |   ----debug
+|   |   |           ----debug
+|   |   ----intermediates
+|   |   |   ----assets
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----debug
+|   |   |   |       ----emoticons
+|   |   |   ----blame
+|   |   |   |   ----res
+|   |   |   |       ----androidTest
+|   |   |   |       |   ----debug
+|   |   |   |       |       ----multi
+|   |   |   |       ----debug
+|   |   |   |           ----multi
+|   |   |   |           ----single
+|   |   |   ----classes
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----debug
+|   |   |   |       ----com
+|   |   |   |       |   ----blockcipher
+|   |   |   |       |   |   ----Bits
+|   |   |   |       |   |   ----encrypt
+|   |   |   |       |   |   ----newblockchipper
+|   |   |   |       |   ----fsck
+|   |   |   |       |   |   ----k9
+|   |   |   |       |   |       ----account
+|   |   |   |       |   |       ----activity
+|   |   |   |       |   |       |   ----compose
+|   |   |   |       |   |       |   ----loader
+|   |   |   |       |   |       |   ----misc
+|   |   |   |       |   |       |   ----setup
+|   |   |   |       |   |       ----cache
+|   |   |   |       |   |       ----controller
+|   |   |   |       |   |       ----crypto
+|   |   |   |       |   |       ----fragment
+|   |   |   |       |   |       ----helper
+|   |   |   |       |   |       ----mailstore
+|   |   |   |       |   |       |   ----migrations
+|   |   |   |       |   |       ----message
+|   |   |   |       |   |       |   ----extractors
+|   |   |   |       |   |       ----notification
+|   |   |   |       |   |       ----preferences
+|   |   |   |       |   |       ----provider
+|   |   |   |       |   |       ----remotecontrol
+|   |   |   |       |   |       ----search
+|   |   |   |       |   |       ----service
+|   |   |   |       |   |       ----ui
+|   |   |   |       |   |       |   ----crypto
+|   |   |   |       |   |       |   ----message
+|   |   |   |       |   |       |   ----messageview
+|   |   |   |       |   |       ----view
+|   |   |   |       |   ----handmark
+|   |   |   |       |   |   ----pulltorefresh
+|   |   |   |       |   |       ----library
+|   |   |   |       |   ----larswerkman
+|   |   |   |       |   |   ----colorpicker
+|   |   |   |       |   ----sha
+|   |   |   |       ----de
+|   |   |   |       |   ----cketti
+|   |   |   |       |       ----library
+|   |   |   |       |           ----changelog
+|   |   |   |       ----org
+|   |   |   |           ----openintents
+|   |   |   |               ----openpgp
+|   |   |   ----dependency-cache
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----debug
+|   |   |   ----exploded-aar
+|   |   |   |   ----com.android.support
+|   |   |   |   |   ----support-v4
+|   |   |   |   |       ----23.1.1
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           |   ----android
+|   |   |   |   |           |       ----support
+|   |   |   |   |           |           ----v4
+|   |   |   |   |           |               ----media
+|   |   |   |   |           |               |   ----session
+|   |   |   |   |           |               ----os
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           |   ----libs
+|   |   |   |   |           ----libs
+|   |   |   |   |           ----res
+|   |   |   |   ----com.android.support.test
+|   |   |   |   |   ----exposed-instrumentation-api-publish
+|   |   |   |   |   |   ----0.4.1
+|   |   |   |   |   |       ----aapt
+|   |   |   |   |   |       ----aidl
+|   |   |   |   |   |       ----assets
+|   |   |   |   |   |       ----jars
+|   |   |   |   |   |       ----res
+|   |   |   |   |   ----rules
+|   |   |   |   |   |   ----0.4.1
+|   |   |   |   |   |       ----aapt
+|   |   |   |   |   |       ----aidl
+|   |   |   |   |   |       ----assets
+|   |   |   |   |   |       ----jars
+|   |   |   |   |   |       ----res
+|   |   |   |   |   |           ----values
+|   |   |   |   |   ----runner
+|   |   |   |   |       ----0.4.1
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----res
+|   |   |   |   ----com.android.support.test.espresso
+|   |   |   |   |   ----espresso-core
+|   |   |   |   |   |   ----2.2.1
+|   |   |   |   |   |       ----aapt
+|   |   |   |   |   |       ----aidl
+|   |   |   |   |   |       ----assets
+|   |   |   |   |   |       ----jars
+|   |   |   |   |   |       ----res
+|   |   |   |   |   ----espresso-idling-resource
+|   |   |   |   |       ----2.2.1
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----res
+|   |   |   |   ----com.splitwise
+|   |   |   |   |   ----tokenautocomplete
+|   |   |   |   |       ----2.0.7
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----jni
+|   |   |   |   |           ----libs
+|   |   |   |   |           ----res
+|   |   |   |   ----de.cketti.library.changelog
+|   |   |   |   |   ----ckchangelog
+|   |   |   |   |       ----1.2.1
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----res
+|   |   |   |   |               ----values
+|   |   |   |   |               ----values-de
+|   |   |   |   |               ----values-el
+|   |   |   |   |               ----values-es
+|   |   |   |   |               ----values-pl
+|   |   |   |   |               ----values-ru
+|   |   |   |   |               ----values-sk
+|   |   |   |   |               ----xml
+|   |   |   |   ----de.cketti.safecontentresolver
+|   |   |   |   |   ----safe-content-resolver-v14
+|   |   |   |   |   |   ----0.0.1
+|   |   |   |   |   |       ----aapt
+|   |   |   |   |   |       ----aidl
+|   |   |   |   |   |       ----assets
+|   |   |   |   |   |       ----jars
+|   |   |   |   |   |       ----jni
+|   |   |   |   |   |       |   ----arm64-v8a
+|   |   |   |   |   |       |   ----armeabi
+|   |   |   |   |   |       |   ----armeabi-v7a
+|   |   |   |   |   |       |   ----mips
+|   |   |   |   |   |       |   ----mips64
+|   |   |   |   |   |       |   ----x86
+|   |   |   |   |   |       |   ----x86_64
+|   |   |   |   |   |       ----libs
+|   |   |   |   |   |       ----res
+|   |   |   |   |   ----safe-content-resolver-v21
+|   |   |   |   |       ----0.0.1
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----jni
+|   |   |   |   |           ----libs
+|   |   |   |   |           ----res
+|   |   |   |   ----kripto_k9
+|   |   |   |   |   ----k9mail-library
+|   |   |   |   |       ----unspecified
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----jni
+|   |   |   |   |           ----libs
+|   |   |   |   |           ----res
+|   |   |   |   ----kripto_k9.plugins
+|   |   |   |   |   ----HoloColorPicker
+|   |   |   |   |       ----unspecified
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----jni
+|   |   |   |   |           ----libs
+|   |   |   |   |           ----res
+|   |   |   |   |               ----values
+|   |   |   |   ----kripto_k9.plugins.Android-PullToRefresh
+|   |   |   |   |   ----library
+|   |   |   |   |       ----unspecified
+|   |   |   |   |           ----aapt
+|   |   |   |   |           ----aidl
+|   |   |   |   |           ----assets
+|   |   |   |   |           ----jars
+|   |   |   |   |           ----jni
+|   |   |   |   |           ----libs
+|   |   |   |   |           ----res
+|   |   |   |   |               ----anim
+|   |   |   |   |               ----drawable
+|   |   |   |   |               ----drawable-hdpi-v4
+|   |   |   |   |               ----drawable-mdpi-v4
+|   |   |   |   |               ----drawable-xhdpi-v4
+|   |   |   |   |               ----layout
+|   |   |   |   |               ----values
+|   |   |   |   |               ----values-ar
+|   |   |   |   |               ----values-cs
+|   |   |   |   |               ----values-de
+|   |   |   |   |               ----values-es
+|   |   |   |   |               ----values-fr
+|   |   |   |   |               ----values-he
+|   |   |   |   |               ----values-it
+|   |   |   |   |               ----values-iw
+|   |   |   |   |               ----values-ja
+|   |   |   |   |               ----values-ko
+|   |   |   |   |               ----values-nl
+|   |   |   |   |               ----values-pl
+|   |   |   |   |               ----values-pt
+|   |   |   |   |               ----values-pt-rBR
+|   |   |   |   |               ----values-ro
+|   |   |   |   |               ----values-ru
+|   |   |   |   |               ----values-sk
+|   |   |   |   |               ----values-zh
+|   |   |   |   ----kripto_k9.plugins.openpgp-api-lib
+|   |   |   |       ----openpgp-api
+|   |   |   |           ----unspecified
+|   |   |   |               ----aapt
+|   |   |   |               ----aidl
+|   |   |   |               ----assets
+|   |   |   |               ----jars
+|   |   |   |               ----jni
+|   |   |   |               ----libs
+|   |   |   |               ----res
+|   |   |   |                   ----drawable-hdpi-v4
+|   |   |   |                   ----drawable-mdpi-v4
+|   |   |   |                   ----drawable-xhdpi-v4
+|   |   |   |                   ----drawable-xxhdpi-v4
+|   |   |   |                   ----values
+|   |   |   |                   ----values-cs
+|   |   |   |                   ----values-de
+|   |   |   |                   ----values-es
+|   |   |   |                   ----values-eu
+|   |   |   |                   ----values-fr
+|   |   |   |                   ----values-it
+|   |   |   |                   ----values-ja
+|   |   |   |                   ----values-nl
+|   |   |   |                   ----values-pl
+|   |   |   |                   ----values-ru
+|   |   |   |                   ----values-sl
+|   |   |   |                   ----values-sr
+|   |   |   |                   ----values-sv
+|   |   |   |                   ----values-tr
+|   |   |   |                   ----values-uk
+|   |   |   |                   ----values-zh
+|   |   |   |                   ----values-zh-rTW
+|   |   |   ----incremental
+|   |   |   |   ----compileDebugAidl
+|   |   |   |   ----compileDebugAndroidTestAidl
+|   |   |   |   ----mergeDebugAndroidTestAssets
+|   |   |   |   ----mergeDebugAndroidTestResources
+|   |   |   |   ----mergeDebugAssets
+|   |   |   |   ----mergeDebugJniLibFolders
+|   |   |   |   ----mergeDebugResources
+|   |   |   ----jniLibs
+|   |   |   |   ----debug
+|   |   |   ----manifest
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----tmp
+|   |   |   ----manifests
+|   |   |   |   ----full
+|   |   |   |       ----debug
+|   |   |   ----pre-dexed
+|   |   |   |   ----debug
+|   |   |   ----res
+|   |   |   |   ----merged
+|   |   |   |       ----androidTest
+|   |   |   |       |   ----debug
+|   |   |   |       |       ----values
+|   |   |   |       ----debug
+|   |   |   |           ----anim
+|   |   |   |           ----drawable
+|   |   |   |           ----drawable-anydpi-v21
+|   |   |   |           ----drawable-hdpi-v4
+|   |   |   |           ----drawable-mdpi-v4
+|   |   |   |           ----drawable-xhdpi-v4
+|   |   |   |           ----drawable-xxhdpi-v4
+|   |   |   |           ----drawable-xxxhdpi-v4
+|   |   |   |           ----layout
+|   |   |   |           ----layout-land
+|   |   |   |           ----menu
+|   |   |   |           ----values
+|   |   |   |           ----values-ar
+|   |   |   |           ----values-ca
+|   |   |   |           ----values-cs
+|   |   |   |           ----values-da
+|   |   |   |           ----values-de
+|   |   |   |           ----values-el
+|   |   |   |           ----values-es
+|   |   |   |           ----values-et
+|   |   |   |           ----values-eu
+|   |   |   |           ----values-fa
+|   |   |   |           ----values-fi
+|   |   |   |           ----values-fr
+|   |   |   |           ----values-gl
+|   |   |   |           ----values-gl-rES
+|   |   |   |           ----values-he
+|   |   |   |           ----values-hr
+|   |   |   |           ----values-hu
+|   |   |   |           ----values-it
+|   |   |   |           ----values-iw
+|   |   |   |           ----values-ja
+|   |   |   |           ----values-ko
+|   |   |   |           ----values-land
+|   |   |   |           ----values-lt
+|   |   |   |           ----values-lv
+|   |   |   |           ----values-nb
+|   |   |   |           ----values-nl
+|   |   |   |           ----values-pl
+|   |   |   |           ----values-pt
+|   |   |   |           ----values-pt-rBR
+|   |   |   |           ----values-ro
+|   |   |   |           ----values-ru
+|   |   |   |           ----values-sk
+|   |   |   |           ----values-sl
+|   |   |   |           ----values-sr
+|   |   |   |           ----values-sv
+|   |   |   |           ----values-sw600dp-land-v13
+|   |   |   |           ----values-sw600dp-port-v13
+|   |   |   |           ----values-tr
+|   |   |   |           ----values-uk
+|   |   |   |           ----values-v21
+|   |   |   |           ----values-zh
+|   |   |   |           ----values-zh-rCN
+|   |   |   |           ----values-zh-rTW
+|   |   |   |           ----xml
+|   |   |   |           ----xml-ja
+|   |   |   ----rs
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   |       ----lib
+|   |   |   |   |       ----obj
+|   |   |   |   ----debug
+|   |   |   |       ----lib
+|   |   |   |       ----obj
+|   |   |   ----symbols
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----debug
+|   |   |   ----transforms
+|   |   |       ----dex
+|   |   |       |   ----debug
+|   |   |       |       ----folders
+|   |   |       |           ----1000
+|   |   |       |               ----1f
+|   |   |       |                   ----main
+|   |   |       ----mergeJavaRes
+|   |   |       |   ----debug
+|   |   |       |       ----jars
+|   |   |       |           ----2
+|   |   |       |               ----1f
+|   |   |       ----mergeJniLibs
+|   |   |           ----debug
+|   |   |               ----folders
+|   |   |                   ----2000
+|   |   |                       ----1f
+|   |   |                           ----main
+|   |   |                               ----lib
+|   |   |                                   ----arm64-v8a
+|   |   |                                   ----armeabi
+|   |   |                                   ----armeabi-v7a
+|   |   |                                   ----mips
+|   |   |                                   ----mips64
+|   |   |                                   ----x86
+|   |   |                                   ----x86_64
+|   |   ----outputs
+|   |   |   ----apk
+|   |   |   ----logs
+|   |   ----tmp
+|   |       ----compileDebugAndroidTestJavaWithJavac
+|   |       |   ----emptySourcePathRef
+|   |       ----compileDebugJavaWithJavac
+|   |           ----emptySourcePathRef
+|   ----src
+|       ----androidTest
+|       |   ----java
+|       |       ----com
+|       |           ----fsck
+|       |               ----k9
+|       |                   ----helper
+|       |                   ----mailstore
+|       |                   ----provider
+|       ----main
+|       |   ----assets
+|       |   |   ----emoticons
+|       |   ----java
+|       |   |   ----com
+|       |   |       ----blockcipher
+|       |   |       |   ----Bits
+|       |   |       |   ----blockslidercipher
+|       |   |       |   ----encrypt
+|       |   |       ----ecdsa
+|       |   |       ----ecdsa2
+|       |   |       ----fsck
+|       |   |       |   ----k9
+|       |   |       |       ----account
+|       |   |       |       ----activity
+|       |   |       |       |   ----compose
+|       |   |       |       |   ----loader
+|       |   |       |       |   ----misc
+|       |   |       |       |   ----setup
+|       |   |       |       ----cache
+|       |   |       |       ----controller
+|       |   |       |       ----crypto
+|       |   |       |       ----fragment
+|       |   |       |       ----helper
+|       |   |       |       ----mailstore
+|       |   |       |       |   ----migrations
+|       |   |       |       ----message
+|       |   |       |       |   ----extractors
+|       |   |       |       ----notification
+|       |   |       |       ----preferences
+|       |   |       |       ----provider
+|       |   |       |       ----remotecontrol
+|       |   |       |       ----search
+|       |   |       |       ----service
+|       |   |       |       ----ui
+|       |   |       |       |   ----crypto
+|       |   |       |       |   ----message
+|       |   |       |       |   ----messageview
+|       |   |       |       ----view
+|       |   |       ----sha
+|       |   ----res
+|       |       ----anim
+|       |       ----drawable
+|       |       ----drawable-anydpi
+|       |       ----drawable-hdpi
+|       |       ----drawable-mdpi
+|       |       ----drawable-xhdpi
+|       |       ----drawable-xxhdpi
+|       |       ----drawable-xxxhdpi
+|       |       ----layout
+|       |       ----layout-land
+|       |       ----menu
+|       |       ----values
+|       |       ----values-ca
+|       |       ----values-cs
+|       |       ----values-da
+|       |       ----values-de
+|       |       ----values-el
+|       |       ----values-es
+|       |       ----values-et
+|       |       ----values-eu
+|       |       ----values-fa
+|       |       ----values-fi
+|       |       ----values-fr
+|       |       ----values-gl
+|       |       ----values-gl-rES
+|       |       ----values-hr
+|       |       ----values-hu
+|       |       ----values-it
+|       |       ----values-iw
+|       |       ----values-ja
+|       |       ----values-ko
+|       |       ----values-land
+|       |       ----values-lt
+|       |       ----values-lv
+|       |       ----values-nb
+|       |       ----values-nl
+|       |       ----values-pl
+|       |       ----values-pt-rBR
+|       |       ----values-ru
+|       |       ----values-sk
+|       |       ----values-sl
+|       |       ----values-sr
+|       |       ----values-sv
+|       |       ----values-sw600dp-land
+|       |       ----values-sw600dp-port
+|       |       ----values-tr
+|       |       ----values-uk
+|       |       ----values-v21
+|       |       ----values-zh-rCN
+|       |       ----values-zh-rTW
+|       |       ----xml
+|       |       ----xml-ja
+|       ----test
+|           ----java
+|           |   ----com
+|           |       ----fsck
+|           |           ----k9
+|           |               ----account
+|           |               ----activity
+|           |               ----controller
+|           |               ----crypto
+|           |               ----helper
+|           |               ----mailstore
+|           |               |   ----migrations
+|           |               ----message
+|           |               |   ----extractors
+|           |               ----notification
+|           ----resources
+|               ----attach
+----k9mail-library
+|   ----build
+|   |   ----generated
+|   |   |   ----res
+|   |   |   |   ----resValues
+|   |   |   |   |   ----androidTest
+|   |   |   |   ----rs
+|   |   |   |       ----androidTest
+|   |   |   |       |   ----debug
+|   |   |   |       ----debug
+|   |   |   |       ----release
+|   |   |   ----source
+|   |   |       ----aidl
+|   |   |       |   ----androidTest
+|   |   |       |   |   ----debug
+|   |   |       |   ----debug
+|   |   |       |   ----release
+|   |   |       ----buildConfig
+|   |   |       |   ----androidTest
+|   |   |       |   |   ----debug
+|   |   |       |   |       ----com
+|   |   |       |   |           ----fsck
+|   |   |       |   |               ----k9
+|   |   |       |   |                   ----mail
+|   |   |       |   |                       ----test
+|   |   |       |   ----debug
+|   |   |       |   |   ----com
+|   |   |       |   |       ----fsck
+|   |   |       |   |           ----k9
+|   |   |       |   |               ----mail
+|   |   |       |   ----release
+|   |   |       |       ----com
+|   |   |       |           ----fsck
+|   |   |       |               ----k9
+|   |   |       |                   ----mail
+|   |   |       ----r
+|   |   |       |   ----androidTest
+|   |   |       |   |   ----debug
+|   |   |       |   ----debug
+|   |   |       |   ----release
+|   |   |       ----rs
+|   |   |           ----androidTest
+|   |   |           |   ----debug
+|   |   |           ----debug
+|   |   |           ----release
+|   |   ----intermediates
+|   |   |   ----annotations
+|   |   |   |   ----debug
+|   |   |   |   ----release
+|   |   |   ----assets
+|   |   |   |   ----androidTest
+|   |   |   |       ----debug
+|   |   |   ----blame
+|   |   |   |   ----res
+|   |   |   |       ----androidTest
+|   |   |   |           ----debug
+|   |   |   ----bundles
+|   |   |   |   ----debug
+|   |   |   |   |   ----aapt
+|   |   |   |   |   ----aidl
+|   |   |   |   |   ----assets
+|   |   |   |   |   ----jni
+|   |   |   |   |   ----libs
+|   |   |   |   |   ----res
+|   |   |   |   ----release
+|   |   |   |       ----aapt
+|   |   |   |       ----aidl
+|   |   |   |       ----assets
+|   |   |   |       ----jni
+|   |   |   |       ----libs
+|   |   |   |       ----res
+|   |   |   ----classes
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----debug
+|   |   |   |   |   ----com
+|   |   |   |   |       ----fsck
+|   |   |   |   |           ----k9
+|   |   |   |   |               ----mail
+|   |   |   |   |                   ----filter
+|   |   |   |   |                   ----helper
+|   |   |   |   |                   ----internet
+|   |   |   |   |                   ----message
+|   |   |   |   |                   ----power
+|   |   |   |   |                   ----ssl
+|   |   |   |   |                   ----store
+|   |   |   |   |                   |   ----imap
+|   |   |   |   |                   |   ----pop3
+|   |   |   |   |                   |   ----webdav
+|   |   |   |   |                   ----transport
+|   |   |   |   ----release
+|   |   |   |       ----com
+|   |   |   |           ----fsck
+|   |   |   |               ----k9
+|   |   |   |                   ----mail
+|   |   |   |                       ----filter
+|   |   |   |                       ----helper
+|   |   |   |                       ----internet
+|   |   |   |                       ----message
+|   |   |   |                       ----power
+|   |   |   |                       ----ssl
+|   |   |   |                       ----store
+|   |   |   |                       |   ----imap
+|   |   |   |                       |   ----pop3
+|   |   |   |                       |   ----webdav
+|   |   |   |                       ----transport
+|   |   |   ----dependency-cache
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----debug
+|   |   |   |   ----release
+|   |   |   ----exploded-aar
+|   |   |   |   ----com.android.support.test
+|   |   |   |       ----exposed-instrumentation-api-publish
+|   |   |   |       |   ----0.4.1
+|   |   |   |       |       ----aapt
+|   |   |   |       |       ----aidl
+|   |   |   |       |       ----assets
+|   |   |   |       |       ----jars
+|   |   |   |       |       ----res
+|   |   |   |       ----runner
+|   |   |   |           ----0.4.1
+|   |   |   |               ----aapt
+|   |   |   |               ----aidl
+|   |   |   |               ----assets
+|   |   |   |               ----jars
+|   |   |   |               ----res
+|   |   |   ----incremental
+|   |   |   |   ----compileDebugAidl
+|   |   |   |   ----compileDebugAndroidTestAidl
+|   |   |   |   ----compileReleaseAidl
+|   |   |   |   ----mergeDebugAndroidTestAssets
+|   |   |   |   ----mergeDebugAndroidTestResources
+|   |   |   |   ----mergeDebugAssets
+|   |   |   |   ----mergeDebugJniLibFolders
+|   |   |   |   ----mergeReleaseAssets
+|   |   |   |   ----mergeReleaseJniLibFolders
+|   |   |   |   ----packageDebugResources
+|   |   |   |   ----packageReleaseResources
+|   |   |   ----jniLibs
+|   |   |   |   ----debug
+|   |   |   |   ----release
+|   |   |   ----lint
+|   |   |   ----manifest
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   ----tmp
+|   |   |   ----res
+|   |   |   |   ----merged
+|   |   |   |       ----androidTest
+|   |   |   |           ----debug
+|   |   |   ----rs
+|   |   |   |   ----androidTest
+|   |   |   |   |   ----debug
+|   |   |   |   |       ----lib
+|   |   |   |   |       ----obj
+|   |   |   |   ----debug
+|   |   |   |   |   ----lib
+|   |   |   |   |   ----obj
+|   |   |   |   ----release
+|   |   |   |       ----lib
+|   |   |   |       ----obj
+|   |   |   ----symbols
+|   |   |   |   ----androidTest
+|   |   |   |       ----debug
+|   |   |   ----transforms
+|   |   |       ----mergeJavaRes
+|   |   |       |   ----debug
+|   |   |       |   ----release
+|   |   |       ----mergeJniLibs
+|   |   |           ----debug
+|   |   |           ----release
+|   |   ----outputs
+|   |   |   ----aar
+|   |   ----tmp
+|   |       ----compileDebugAndroidTestJavaWithJavac
+|   |       |   ----emptySourcePathRef
+|   |       ----compileDebugJavaWithJavac
+|   |       |   ----emptySourcePathRef
+|   |       ----compileReleaseJavaWithJavac
+|   |           ----emptySourcePathRef
+|   ----src
+|       ----androidTest
+|       |   ----java
+|       |       ----com
+|       |           ----fsck
+|       |               ----k9
+|       |                   ----mail
+|       |                       ----ssl
+|       ----main
+|       |   ----java
+|       |       ----com
+|       |           ----fsck
+|       |               ----k9
+|       |                   ----mail
+|       |                       ----filter
+|       |                       ----helper
+|       |                       ----internet
+|       |                       ----message
+|       |                       ----power
+|       |                       ----ssl
+|       |                       ----store
+|       |                       |   ----imap
+|       |                       |   ----pop3
+|       |                       |   ----webdav
+|       |                       ----transport
+|       ----test
+|           ----java
+|           |   ----com
+|           |       ----fsck
+|           |           ----k9
+|           |               ----mail
+|           |                   ----filter
+|           |                   ----internet
+|           |                   ----store
+|           |                   |   ----imap
+|           |                   |   |   ----mockserver
+|           |                   |   ----pop3
+|           |                   |   ----webdav
+|           |                   ----transport
+|           ----resources
+----org.apache.http.legacy
+----plugins
+|   ----Android-PullToRefresh
+|   |   ----library
+|   |       ----build
+|   |       |   ----generated
+|   |       |   |   ----res
+|   |       |   |   |   ----resValues
+|   |       |   |   |   |   ----androidTest
+|   |       |   |   |   ----rs
+|   |       |   |   |       ----androidTest
+|   |       |   |   |       |   ----debug
+|   |       |   |   |       ----debug
+|   |       |   |   |       ----release
+|   |       |   |   ----source
+|   |       |   |       ----aidl
+|   |       |   |       |   ----androidTest
+|   |       |   |       |   |   ----debug
+|   |       |   |       |   ----debug
+|   |       |   |       |   ----release
+|   |       |   |       ----buildConfig
+|   |       |   |       |   ----androidTest
+|   |       |   |       |   |   ----debug
+|   |       |   |       |   |       ----com
+|   |       |   |       |   |           ----handmark
+|   |       |   |       |   |               ----pulltorefresh
+|   |       |   |       |   |                   ----library
+|   |       |   |       |   |                       ----test
+|   |       |   |       |   ----debug
+|   |       |   |       |   |   ----com
+|   |       |   |       |   |       ----handmark
+|   |       |   |       |   |           ----pulltorefresh
+|   |       |   |       |   |               ----library
+|   |       |   |       |   ----release
+|   |       |   |       |       ----com
+|   |       |   |       |           ----handmark
+|   |       |   |       |               ----pulltorefresh
+|   |       |   |       |                   ----library
+|   |       |   |       ----r
+|   |       |   |       |   ----androidTest
+|   |       |   |       |   |   ----debug
+|   |       |   |       |   |       ----com
+|   |       |   |       |   |           ----handmark
+|   |       |   |       |   |               ----pulltorefresh
+|   |       |   |       |   |                   ----library
+|   |       |   |       |   |                       ----test
+|   |       |   |       |   ----debug
+|   |       |   |       |   |   ----com
+|   |       |   |       |   |       ----handmark
+|   |       |   |       |   |           ----pulltorefresh
+|   |       |   |       |   |               ----library
+|   |       |   |       |   ----release
+|   |       |   |       |       ----com
+|   |       |   |       |           ----handmark
+|   |       |   |       |               ----pulltorefresh
+|   |       |   |       |                   ----library
+|   |       |   |       ----rs
+|   |       |   |           ----androidTest
+|   |       |   |           |   ----debug
+|   |       |   |           ----debug
+|   |       |   |           ----release
+|   |       |   ----intermediates
+|   |       |   |   ----assets
+|   |       |   |   |   ----androidTest
+|   |       |   |   |       ----debug
+|   |       |   |   ----blame
+|   |       |   |   |   ----res
+|   |       |   |   |       ----androidTest
+|   |       |   |   |           ----debug
+|   |       |   |   |               ----multi
+|   |       |   |   |               ----single
+|   |       |   |   ----bundles
+|   |       |   |   |   ----debug
+|   |       |   |   |   |   ----aapt
+|   |       |   |   |   |   ----aidl
+|   |       |   |   |   |   ----assets
+|   |       |   |   |   |   ----jni
+|   |       |   |   |   |   ----libs
+|   |       |   |   |   |   ----res
+|   |       |   |   |   |       ----anim
+|   |       |   |   |   |       ----drawable
+|   |       |   |   |   |       ----drawable-hdpi-v4
+|   |       |   |   |   |       ----drawable-mdpi-v4
+|   |       |   |   |   |       ----drawable-xhdpi-v4
+|   |       |   |   |   |       ----layout
+|   |       |   |   |   |       ----values
+|   |       |   |   |   |       ----values-ar
+|   |       |   |   |   |       ----values-cs
+|   |       |   |   |   |       ----values-de
+|   |       |   |   |   |       ----values-es
+|   |       |   |   |   |       ----values-fr
+|   |       |   |   |   |       ----values-he
+|   |       |   |   |   |       ----values-it
+|   |       |   |   |   |       ----values-iw
+|   |       |   |   |   |       ----values-ja
+|   |       |   |   |   |       ----values-ko
+|   |       |   |   |   |       ----values-nl
+|   |       |   |   |   |       ----values-pl
+|   |       |   |   |   |       ----values-pt
+|   |       |   |   |   |       ----values-pt-rBR
+|   |       |   |   |   |       ----values-ro
+|   |       |   |   |   |       ----values-ru
+|   |       |   |   |   |       ----values-sk
+|   |       |   |   |   |       ----values-zh
+|   |       |   |   |   ----release
+|   |       |   |   |       ----aapt
+|   |       |   |   |       ----aidl
+|   |       |   |   |       ----assets
+|   |       |   |   |       ----jni
+|   |       |   |   |       ----libs
+|   |       |   |   |       ----res
+|   |       |   |   |           ----anim
+|   |       |   |   |           ----drawable
+|   |       |   |   |           ----drawable-hdpi-v4
+|   |       |   |   |           ----drawable-mdpi-v4
+|   |       |   |   |           ----drawable-xhdpi-v4
+|   |       |   |   |           ----layout
+|   |       |   |   |           ----values
+|   |       |   |   |           ----values-ar
+|   |       |   |   |           ----values-cs
+|   |       |   |   |           ----values-de
+|   |       |   |   |           ----values-es
+|   |       |   |   |           ----values-fr
+|   |       |   |   |           ----values-he
+|   |       |   |   |           ----values-it
+|   |       |   |   |           ----values-iw
+|   |       |   |   |           ----values-ja
+|   |       |   |   |           ----values-ko
+|   |       |   |   |           ----values-nl
+|   |       |   |   |           ----values-pl
+|   |       |   |   |           ----values-pt
+|   |       |   |   |           ----values-pt-rBR
+|   |       |   |   |           ----values-ro
+|   |       |   |   |           ----values-ru
+|   |       |   |   |           ----values-sk
+|   |       |   |   |           ----values-zh
+|   |       |   |   ----classes
+|   |       |   |   |   ----androidTest
+|   |       |   |   |   |   ----debug
+|   |       |   |   |   ----debug
+|   |       |   |   |   |   ----com
+|   |       |   |   |   |       ----handmark
+|   |       |   |   |   |           ----pulltorefresh
+|   |       |   |   |   |               ----library
+|   |       |   |   |   |                   ----extras
+|   |       |   |   |   |                   ----internal
+|   |       |   |   |   ----release
+|   |       |   |   |       ----com
+|   |       |   |   |           ----handmark
+|   |       |   |   |               ----pulltorefresh
+|   |       |   |   |                   ----library
+|   |       |   |   |                       ----extras
+|   |       |   |   |                       ----internal
+|   |       |   |   ----dependency-cache
+|   |       |   |   |   ----androidTest
+|   |       |   |   |   |   ----debug
+|   |       |   |   |   ----debug
+|   |       |   |   |   ----release
+|   |       |   |   ----incremental
+|   |       |   |   |   ----compileDebugAidl
+|   |       |   |   |   ----compileDebugAndroidTestAidl
+|   |       |   |   |   ----compileReleaseAidl
+|   |       |   |   |   ----mergeDebugAndroidTestAssets
+|   |       |   |   |   ----mergeDebugAndroidTestResources
+|   |       |   |   |   ----mergeDebugAssets
+|   |       |   |   |   ----mergeDebugJniLibFolders
+|   |       |   |   |   ----mergeReleaseAssets
+|   |       |   |   |   ----mergeReleaseJniLibFolders
+|   |       |   |   |   ----packageDebugResources
+|   |       |   |   |   ----packageReleaseResources
+|   |       |   |   ----jniLibs
+|   |       |   |   |   ----debug
+|   |       |   |   |   ----release
+|   |       |   |   ----lint
+|   |       |   |   ----manifest
+|   |       |   |   |   ----androidTest
+|   |       |   |   |   |   ----debug
+|   |       |   |   |   ----tmp
+|   |       |   |   ----res
+|   |       |   |   |   ----merged
+|   |       |   |   |       ----androidTest
+|   |       |   |   |           ----debug
+|   |       |   |   |               ----anim
+|   |       |   |   |               ----drawable
+|   |       |   |   |               ----drawable-hdpi-v4
+|   |       |   |   |               ----drawable-mdpi-v4
+|   |       |   |   |               ----drawable-xhdpi-v4
+|   |       |   |   |               ----layout
+|   |       |   |   |               ----values
+|   |       |   |   |               ----values-ar
+|   |       |   |   |               ----values-cs
+|   |       |   |   |               ----values-de
+|   |       |   |   |               ----values-es
+|   |       |   |   |               ----values-fr
+|   |       |   |   |               ----values-he
+|   |       |   |   |               ----values-it
+|   |       |   |   |               ----values-iw
+|   |       |   |   |               ----values-ja
+|   |       |   |   |               ----values-ko
+|   |       |   |   |               ----values-nl
+|   |       |   |   |               ----values-pl
+|   |       |   |   |               ----values-pt
+|   |       |   |   |               ----values-pt-rBR
+|   |       |   |   |               ----values-ro
+|   |       |   |   |               ----values-ru
+|   |       |   |   |               ----values-sk
+|   |       |   |   |               ----values-zh
+|   |       |   |   ----rs
+|   |       |   |   |   ----androidTest
+|   |       |   |   |   |   ----debug
+|   |       |   |   |   |       ----lib
+|   |       |   |   |   |       ----obj
+|   |       |   |   |   ----debug
+|   |       |   |   |   |   ----lib
+|   |       |   |   |   |   ----obj
+|   |       |   |   |   ----release
+|   |       |   |   |       ----lib
+|   |       |   |   |       ----obj
+|   |       |   |   ----symbols
+|   |       |   |   |   ----androidTest
+|   |       |   |   |       ----debug
+|   |       |   |   ----transforms
+|   |       |   |       ----mergeJavaRes
+|   |       |   |       |   ----debug
+|   |       |   |       |   ----release
+|   |       |   |       ----mergeJniLibs
+|   |       |   |           ----debug
+|   |       |   |           ----release
+|   |       |   ----outputs
+|   |       |   |   ----aar
+|   |       |   ----tmp
+|   |       |       ----compileDebugAndroidTestJavaWithJavac
+|   |       |       |   ----emptySourcePathRef
+|   |       |       ----compileDebugJavaWithJavac
+|   |       |       ----compileReleaseJavaWithJavac
+|   |       ----res
+|   |       |   ----anim
+|   |       |   ----drawable
+|   |       |   ----drawable-hdpi
+|   |       |   ----drawable-mdpi
+|   |       |   ----drawable-xhdpi
+|   |       |   ----layout
+|   |       |   ----values
+|   |       |   ----values-ar
+|   |       |   ----values-cs
+|   |       |   ----values-de
+|   |       |   ----values-es
+|   |       |   ----values-fr
+|   |       |   ----values-he
+|   |       |   ----values-it
+|   |       |   ----values-iw
+|   |       |   ----values-ja
+|   |       |   ----values-ko
+|   |       |   ----values-nl
+|   |       |   ----values-pl
+|   |       |   ----values-pt
+|   |       |   ----values-pt-rBR
+|   |       |   ----values-ro
+|   |       |   ----values-ru
+|   |       |   ----values-sk
+|   |       |   ----values-zh
+|   |       ----src
+|   |           ----com
+|   |               ----handmark
+|   |                   ----pulltorefresh
+|   |                       ----library
+|   |                           ----extras
+|   |                           ----internal
+|   ----HoloColorPicker
+|   |   ----build
+|   |   |   ----generated
+|   |   |   |   ----res
+|   |   |   |   |   ----resValues
+|   |   |   |   |   |   ----androidTest
+|   |   |   |   |   ----rs
+|   |   |   |   |       ----androidTest
+|   |   |   |   |       |   ----debug
+|   |   |   |   |       ----debug
+|   |   |   |   |       ----release
+|   |   |   |   ----source
+|   |   |   |       ----aidl
+|   |   |   |       |   ----androidTest
+|   |   |   |       |   |   ----debug
+|   |   |   |       |   ----debug
+|   |   |   |       |   ----release
+|   |   |   |       ----buildConfig
+|   |   |   |       |   ----androidTest
+|   |   |   |       |   |   ----debug
+|   |   |   |       |   |       ----com
+|   |   |   |       |   |           ----larswerkman
+|   |   |   |       |   |               ----colorpicker
+|   |   |   |       |   |                   ----test
+|   |   |   |       |   ----debug
+|   |   |   |       |   |   ----com
+|   |   |   |       |   |       ----larswerkman
+|   |   |   |       |   |           ----colorpicker
+|   |   |   |       |   ----release
+|   |   |   |       |       ----com
+|   |   |   |       |           ----larswerkman
+|   |   |   |       |               ----colorpicker
+|   |   |   |       ----r
+|   |   |   |       |   ----androidTest
+|   |   |   |       |   |   ----debug
+|   |   |   |       |   |       ----com
+|   |   |   |       |   |           ----larswerkman
+|   |   |   |       |   |               ----colorpicker
+|   |   |   |       |   |                   ----test
+|   |   |   |       |   ----debug
+|   |   |   |       |   |   ----com
+|   |   |   |       |   |       ----larswerkman
+|   |   |   |       |   |           ----colorpicker
+|   |   |   |       |   ----release
+|   |   |   |       |       ----com
+|   |   |   |       |           ----larswerkman
+|   |   |   |       |               ----colorpicker
+|   |   |   |       ----rs
+|   |   |   |           ----androidTest
+|   |   |   |           |   ----debug
+|   |   |   |           ----debug
+|   |   |   |           ----release
+|   |   |   ----intermediates
+|   |   |   |   ----assets
+|   |   |   |   |   ----androidTest
+|   |   |   |   |       ----debug
+|   |   |   |   ----blame
+|   |   |   |   |   ----res
+|   |   |   |   |       ----androidTest
+|   |   |   |   |           ----debug
+|   |   |   |   |               ----multi
+|   |   |   |   ----bundles
+|   |   |   |   |   ----debug
+|   |   |   |   |   |   ----aapt
+|   |   |   |   |   |   ----aidl
+|   |   |   |   |   |   ----assets
+|   |   |   |   |   |   ----jni
+|   |   |   |   |   |   ----libs
+|   |   |   |   |   |   ----res
+|   |   |   |   |   |       ----values
+|   |   |   |   |   ----release
+|   |   |   |   |       ----aapt
+|   |   |   |   |       ----aidl
+|   |   |   |   |       ----assets
+|   |   |   |   |       ----jni
+|   |   |   |   |       ----libs
+|   |   |   |   |       ----res
+|   |   |   |   |           ----values
+|   |   |   |   ----classes
+|   |   |   |   |   ----androidTest
+|   |   |   |   |   |   ----debug
+|   |   |   |   |   ----debug
+|   |   |   |   |   |   ----com
+|   |   |   |   |   |       ----larswerkman
+|   |   |   |   |   |           ----colorpicker
+|   |   |   |   |   ----release
+|   |   |   |   |       ----com
+|   |   |   |   |           ----larswerkman
+|   |   |   |   |               ----colorpicker
+|   |   |   |   ----dependency-cache
+|   |   |   |   |   ----androidTest
+|   |   |   |   |   |   ----debug
+|   |   |   |   |   ----debug
+|   |   |   |   |   ----release
+|   |   |   |   ----incremental
+|   |   |   |   |   ----compileDebugAidl
+|   |   |   |   |   ----compileDebugAndroidTestAidl
+|   |   |   |   |   ----compileReleaseAidl
+|   |   |   |   |   ----mergeDebugAndroidTestAssets
+|   |   |   |   |   ----mergeDebugAndroidTestResources
+|   |   |   |   |   ----mergeDebugAssets
+|   |   |   |   |   ----mergeDebugJniLibFolders
+|   |   |   |   |   ----mergeReleaseAssets
+|   |   |   |   |   ----mergeReleaseJniLibFolders
+|   |   |   |   |   ----packageDebugResources
+|   |   |   |   |   ----packageReleaseResources
+|   |   |   |   ----jniLibs
+|   |   |   |   |   ----debug
+|   |   |   |   |   ----release
+|   |   |   |   ----lint
+|   |   |   |   ----manifest
+|   |   |   |   |   ----androidTest
+|   |   |   |   |   |   ----debug
+|   |   |   |   |   ----tmp
+|   |   |   |   ----res
+|   |   |   |   |   ----merged
+|   |   |   |   |       ----androidTest
+|   |   |   |   |           ----debug
+|   |   |   |   |               ----values
+|   |   |   |   ----rs
+|   |   |   |   |   ----androidTest
+|   |   |   |   |   |   ----debug
+|   |   |   |   |   |       ----lib
+|   |   |   |   |   |       ----obj
+|   |   |   |   |   ----debug
+|   |   |   |   |   |   ----lib
+|   |   |   |   |   |   ----obj
+|   |   |   |   |   ----release
+|   |   |   |   |       ----lib
+|   |   |   |   |       ----obj
+|   |   |   |   ----symbols
+|   |   |   |   |   ----androidTest
+|   |   |   |   |       ----debug
+|   |   |   |   ----transforms
+|   |   |   |       ----mergeJavaRes
+|   |   |   |       |   ----debug
+|   |   |   |       |   ----release
+|   |   |   |       ----mergeJniLibs
+|   |   |   |           ----debug
+|   |   |   |           ----release
+|   |   |   ----outputs
+|   |   |   |   ----aar
+|   |   |   ----tmp
+|   |   |       ----compileDebugAndroidTestJavaWithJavac
+|   |   |       |   ----emptySourcePathRef
+|   |   |       ----compileDebugJavaWithJavac
+|   |   |       ----compileReleaseJavaWithJavac
+|   |   ----res
+|   |   |   ----values
+|   |   ----src
+|   |       ----com
+|   |           ----larswerkman
+|   |               ----colorpicker
+|   ----openpgp-api-lib
+|       ----.tx
+|       ----example
+|       |   ----gradle
+|       |   |   ----wrapper
+|       |   ----src
+|       |       ----main
+|       |           ----java
+|       |           |   ----org
+|       |           |       ----openintents
+|       |           |           ----openpgp
+|       |           |               ----example
+|       |           ----res
+|       |               ----drawable-hdpi
+|       |               ----drawable-mdpi
+|       |               ----drawable-xhdpi
+|       |               ----drawable-xxhdpi
+|       |               ----layout
+|       |               ----xml
+|       ----gradle
+|       |   ----wrapper
+|       ----openpgp-api
+|           ----build
+|           |   ----generated
+|           |   |   ----res
+|           |   |   |   ----resValues
+|           |   |   |   |   ----androidTest
+|           |   |   |   ----rs
+|           |   |   |       ----androidTest
+|           |   |   |       |   ----debug
+|           |   |   |       ----debug
+|           |   |   |       ----release
+|           |   |   ----source
+|           |   |       ----aidl
+|           |   |       |   ----androidTest
+|           |   |       |   |   ----debug
+|           |   |       |   ----debug
+|           |   |       |   |   ----org
+|           |   |       |   |       ----openintents
+|           |   |       |   |           ----openpgp
+|           |   |       |   ----release
+|           |   |       |       ----org
+|           |   |       |           ----openintents
+|           |   |       |               ----openpgp
+|           |   |       ----buildConfig
+|           |   |       |   ----androidTest
+|           |   |       |   |   ----debug
+|           |   |       |   |       ----org
+|           |   |       |   |           ----openintents
+|           |   |       |   |               ----openpgp
+|           |   |       |   |                   ----test
+|           |   |       |   ----debug
+|           |   |       |   |   ----org
+|           |   |       |   |       ----openintents
+|           |   |       |   |           ----openpgp
+|           |   |       |   ----release
+|           |   |       |       ----org
+|           |   |       |           ----openintents
+|           |   |       |               ----openpgp
+|           |   |       ----r
+|           |   |       |   ----androidTest
+|           |   |       |   |   ----debug
+|           |   |       |   |       ----org
+|           |   |       |   |           ----openintents
+|           |   |       |   |               ----openpgp
+|           |   |       |   |                   ----test
+|           |   |       |   ----debug
+|           |   |       |   |   ----org
+|           |   |       |   |       ----openintents
+|           |   |       |   |           ----openpgp
+|           |   |       |   ----release
+|           |   |       |       ----org
+|           |   |       |           ----openintents
+|           |   |       |               ----openpgp
+|           |   |       ----rs
+|           |   |           ----androidTest
+|           |   |           |   ----debug
+|           |   |           ----debug
+|           |   |           ----release
+|           |   ----intermediates
+|           |   |   ----assets
+|           |   |   |   ----androidTest
+|           |   |   |       ----debug
+|           |   |   ----blame
+|           |   |   |   ----res
+|           |   |   |       ----androidTest
+|           |   |   |           ----debug
+|           |   |   |               ----multi
+|           |   |   |               ----single
+|           |   |   ----bundles
+|           |   |   |   ----debug
+|           |   |   |   |   ----aapt
+|           |   |   |   |   ----aidl
+|           |   |   |   |   ----assets
+|           |   |   |   |   ----jni
+|           |   |   |   |   ----libs
+|           |   |   |   |   ----res
+|           |   |   |   |       ----drawable-hdpi-v4
+|           |   |   |   |       ----drawable-mdpi-v4
+|           |   |   |   |       ----drawable-xhdpi-v4
+|           |   |   |   |       ----drawable-xxhdpi-v4
+|           |   |   |   |       ----values
+|           |   |   |   |       ----values-cs
+|           |   |   |   |       ----values-de
+|           |   |   |   |       ----values-es
+|           |   |   |   |       ----values-eu
+|           |   |   |   |       ----values-fr
+|           |   |   |   |       ----values-it
+|           |   |   |   |       ----values-ja
+|           |   |   |   |       ----values-nl
+|           |   |   |   |       ----values-pl
+|           |   |   |   |       ----values-ru
+|           |   |   |   |       ----values-sl
+|           |   |   |   |       ----values-sr
+|           |   |   |   |       ----values-sv
+|           |   |   |   |       ----values-tr
+|           |   |   |   |       ----values-uk
+|           |   |   |   |       ----values-zh
+|           |   |   |   |       ----values-zh-rTW
+|           |   |   |   ----release
+|           |   |   |       ----aapt
+|           |   |   |       ----aidl
+|           |   |   |       ----assets
+|           |   |   |       ----jni
+|           |   |   |       ----libs
+|           |   |   |       ----res
+|           |   |   |           ----drawable-hdpi-v4
+|           |   |   |           ----drawable-mdpi-v4
+|           |   |   |           ----drawable-xhdpi-v4
+|           |   |   |           ----drawable-xxhdpi-v4
+|           |   |   |           ----values
+|           |   |   |           ----values-cs
+|           |   |   |           ----values-de
+|           |   |   |           ----values-es
+|           |   |   |           ----values-eu
+|           |   |   |           ----values-fr
+|           |   |   |           ----values-it
+|           |   |   |           ----values-ja
+|           |   |   |           ----values-nl
+|           |   |   |           ----values-pl
+|           |   |   |           ----values-ru
+|           |   |   |           ----values-sl
+|           |   |   |           ----values-sr
+|           |   |   |           ----values-sv
+|           |   |   |           ----values-tr
+|           |   |   |           ----values-uk
+|           |   |   |           ----values-zh
+|           |   |   |           ----values-zh-rTW
+|           |   |   ----classes
+|           |   |   |   ----androidTest
+|           |   |   |   |   ----debug
+|           |   |   |   ----debug
+|           |   |   |   |   ----org
+|           |   |   |   |       ----openintents
+|           |   |   |   |           ----openpgp
+|           |   |   |   |               ----util
+|           |   |   |   ----release
+|           |   |   |       ----org
+|           |   |   |           ----openintents
+|           |   |   |               ----openpgp
+|           |   |   |                   ----util
+|           |   |   ----dependency-cache
+|           |   |   |   ----androidTest
+|           |   |   |   |   ----debug
+|           |   |   |   ----debug
+|           |   |   |   ----release
+|           |   |   ----incremental
+|           |   |   |   ----compileDebugAidl
+|           |   |   |   ----compileDebugAndroidTestAidl
+|           |   |   |   ----compileReleaseAidl
+|           |   |   |   ----mergeDebugAndroidTestAssets
+|           |   |   |   ----mergeDebugAndroidTestResources
+|           |   |   |   ----mergeDebugAssets
+|           |   |   |   ----mergeDebugJniLibFolders
+|           |   |   |   ----mergeReleaseAssets
+|           |   |   |   ----mergeReleaseJniLibFolders
+|           |   |   |   ----packageDebugResources
+|           |   |   |   ----packageReleaseResources
+|           |   |   ----jniLibs
+|           |   |   |   ----debug
+|           |   |   |   ----release
+|           |   |   ----lint
+|           |   |   ----manifest
+|           |   |   |   ----androidTest
+|           |   |   |   |   ----debug
+|           |   |   |   ----tmp
+|           |   |   ----res
+|           |   |   |   ----merged
+|           |   |   |       ----androidTest
+|           |   |   |           ----debug
+|           |   |   |               ----drawable-hdpi-v4
+|           |   |   |               ----drawable-mdpi-v4
+|           |   |   |               ----drawable-xhdpi-v4
+|           |   |   |               ----drawable-xxhdpi-v4
+|           |   |   |               ----values
+|           |   |   |               ----values-cs
+|           |   |   |               ----values-de
+|           |   |   |               ----values-es
+|           |   |   |               ----values-eu
+|           |   |   |               ----values-fr
+|           |   |   |               ----values-it
+|           |   |   |               ----values-ja
+|           |   |   |               ----values-nl
+|           |   |   |               ----values-pl
+|           |   |   |               ----values-ru
+|           |   |   |               ----values-sl
+|           |   |   |               ----values-sr
+|           |   |   |               ----values-sv
+|           |   |   |               ----values-tr
+|           |   |   |               ----values-uk
+|           |   |   |               ----values-zh
+|           |   |   |               ----values-zh-rTW
+|           |   |   ----rs
+|           |   |   |   ----androidTest
+|           |   |   |   |   ----debug
+|           |   |   |   |       ----lib
+|           |   |   |   |       ----obj
+|           |   |   |   ----debug
+|           |   |   |   |   ----lib
+|           |   |   |   |   ----obj
+|           |   |   |   ----release
+|           |   |   |       ----lib
+|           |   |   |       ----obj
+|           |   |   ----symbols
+|           |   |   |   ----androidTest
+|           |   |   |       ----debug
+|           |   |   ----transforms
+|           |   |       ----mergeJavaRes
+|           |   |       |   ----debug
+|           |   |       |   ----release
+|           |   |       ----mergeJniLibs
+|           |   |           ----debug
+|           |   |           ----release
+|           |   ----outputs
+|           |   |   ----aar
+|           |   ----tmp
+|           |       ----compileDebugAndroidTestJavaWithJavac
+|           |       |   ----emptySourcePathRef
+|           |       ----compileDebugJavaWithJavac
+|           |       ----compileReleaseJavaWithJavac
+|           ----src
+|               ----main
+|                   ----aidl
+|                   |   ----org
+|                   |       ----openintents
+|                   |           ----openpgp
+|                   ----java
+|                   |   ----org
+|                   |       ----openintents
+|                   |           ----openpgp
+|                   |               ----util
+|                   ----res
+|                       ----drawable-hdpi
+|                       ----drawable-mdpi
+|                       ----drawable-xhdpi
+|                       ----drawable-xxhdpi
+|                       ----values
+|                       ----values-ar
+|                       ----values-bg
+|                       ----values-cs
+|                       ----values-de
+|                       ----values-es
+|                       ----values-et
+|                       ----values-eu
+|                       ----values-fi
+|                       ----values-fr
+|                       ----values-is
+|                       ----values-it
+|                       ----values-ja
+|                       ----values-nl
+|                       ----values-pl
+|                       ----values-pt
+|                       ----values-ro
+|                       ----values-ru
+|                       ----values-sl
+|                       ----values-sr
+|                       ----values-sv
+|                       ----values-tr
+|                       ----values-uk
+|                       ----values-zh
+|                       ----values-zh-rTW
+----tools
+    ----android-studio

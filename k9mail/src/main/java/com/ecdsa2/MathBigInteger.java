@@ -10,6 +10,12 @@ import java.math.BigInteger;
  *
  */
 public class MathBigInteger {
+
+	/**
+	 * calculate sqrt of BigInteger
+	 * @param n BigInteger
+	 * @return BigInteger sqrt
+	 */
 	public static BigInteger sqrt(BigInteger n) {
 		BigInteger a = BigInteger.ONE;
 		BigInteger b = new BigInteger(n.shiftRight(5).add(new BigInteger("8")).toString());

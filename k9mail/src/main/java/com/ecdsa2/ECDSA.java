@@ -12,7 +12,13 @@ import java.util.Random;
  *
  */
 public class ECDSA {
-	
+
+	/**
+	 * get Digital Signature from message and privatekey
+	 * @param message byte[]
+	 * @param privateKey BigInteger
+	 * @return Signature in string
+	 */
 	public static String sign(byte[] message, BigInteger privateKey) throws UnsupportedEncodingException {
             String mess = "";
             for (int i = 0;i<message.length;i++){
@@ -35,7 +41,13 @@ public class ECDSA {
 
             return "/" + r.toString(16) + "-" + s.toString(16);
 	}
-	
+
+	/**
+	 * Verify message that already Signed by ECDSA
+	 * @param message byte[]
+	 * @param publicKey BigInteger[]
+	 * @return verified/not
+	 */
 	public static boolean verify(byte[] message, BigInteger[] publicKey) throws UnsupportedEncodingException {
 		if (!ECC.isValidPoint(publicKey)) {
 			System.out.println("Invalid public key.");
