@@ -52,6 +52,11 @@ public class SHA1 {
         return (num << cnt) | (num >>> (32 - cnt));
     }
 
+    /**
+     * get BigInteger value from Hash
+     * @param message String
+     * @return BigInteger value form Hash
+     */
     public static BigInteger getHashBigInteger(String message) throws UnsupportedEncodingException {
         String h = encode(message);
         String hHex = String.format("%x", new BigInteger(1, h.getBytes("UTF-16")));
@@ -61,6 +66,8 @@ public class SHA1 {
 
     /*
      * Take a string and return the base64 representation of its SHA-1.
+     * @param str String
+     * @return Hash from input str
      */
     public static String encode(String str) {
 

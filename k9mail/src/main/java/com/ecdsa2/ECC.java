@@ -1,7 +1,6 @@
 package com.ecdsa2;
 
 import java.math.BigInteger;
-//import java.util.MathBigInteger;
 
 public class ECC {
 
@@ -17,6 +16,7 @@ public class ECC {
 	private final static BigInteger a = new BigInteger("-3"); // as a
 	private final static BigInteger b = new BigInteger("64210519e59c80e70fa7e9ab72243049feb8deecc146b9b1", 16); // as b
 	private final static BigInteger[] g = {new BigInteger("188da80eb03090f67cbf20eb43a18800f4ff0afd82ff1012", 16), new BigInteger("07192b95ffc8da78631011ed6b24cdd573f977a11e794811", 16)}; // as Base Point
+
 
 	public static BigInteger getA() {
 		return a;
@@ -34,6 +34,11 @@ public class ECC {
 		return g;
 	}
 
+	/**
+	 * Check P is a valid Point
+	 * @param P
+	 * @return LHS.compareTo(RHS) == 0
+	 */
 	public static boolean isValidPoint(BigInteger[] P) {
 		BigInteger LHS = P[1].pow(2).mod(p);
 		BigInteger RHS = P[0].pow(3).mod(p);
@@ -41,7 +46,12 @@ public class ECC {
 		RHS = RHS.add(b).mod(p);
 		return LHS.compareTo(RHS) == 0;
 	}
-	
+
+	/**
+	 * Check Px is a valid
+	 * @param Px BigInteger
+	 * @return Py2.pow(2).compareTo(Py) == 0
+	 */
 	public static boolean isValid(BigInteger Px) {
 		BigInteger Py = Px.pow(3).mod(p);
 		Py = Py.add(Px.multiply(a)).mod(p);
@@ -60,7 +70,8 @@ public class ECC {
 	
 	/**
 	 * calculate 2P
-	 * @return
+	 * @param P BigInteger[]
+	 * @return 2P
 	 */
 	public static BigInteger[] doDouble(BigInteger[] P) {
 		BigInteger[] retval = new BigInteger[2];
@@ -77,9 +88,9 @@ public class ECC {
 	
 	/**
 	 * calculate P + Q
-	 * @param P
-	 * @param Q
-	 * @return
+	 * @param P BigInteger[]
+	 * @param Q BigInteger[]
+	 * @return P + Q
 	 */
 	public static BigInteger[] doPlus(BigInteger[] P, BigInteger[] Q) {		
 		BigInteger[] retval = new BigInteger[2];
@@ -101,11 +112,22 @@ public class ECC {
 		
 		return retval;
 	}
-	
+
+	/**
+	 * calculate publicKey
+	 * @param privateKey BigInteger
+	 * @return publicKey
+	 */
 	public static BigInteger[] getPublicKey(BigInteger privateKey) {
 		return doScalarMultiply(privateKey, g);
 	}
-	
+
+	/**
+	 * calculate k * P
+	 * @param k BigInteger
+	 * @param P BigInteger[]
+	 * @return k * P
+	 */
 	public static BigInteger[] doScalarMultiply(BigInteger k, BigInteger[] P) {
 		BigInteger[] retval = new BigInteger[2];
 		retval[0] = NEUTRAL_VALUE;
