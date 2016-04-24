@@ -2817,6 +2817,7 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         TextView message_content = (TextView) findViewById(R.id.message_content);
         String message = message_content.getText().toString();
         BigInteger private_key = new BigInteger(dsa_key, 16);
+//        BigInteger private_key = ECC.P;
         BigInteger[] public_key = ECC.getPublicKey(private_key);
         String signature = ECDSA.sign(message.getBytes(), private_key);
 //        message_content.append("---BEGIN SIGNATURE---\n");

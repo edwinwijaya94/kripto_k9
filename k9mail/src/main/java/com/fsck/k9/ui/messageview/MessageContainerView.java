@@ -1,5 +1,7 @@
 package com.fsck.k9.ui.messageview;
 
+import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,6 +37,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.blockcipher.blockslidercipher.BlockSliderChipper;
+import com.ecdsa2.*;
 import com.fsck.k9.R;
 import com.fsck.k9.activity.MessageInfoHolder;
 import com.fsck.k9.helper.ClipboardManager;
@@ -105,8 +108,8 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
             public void onClick(View v) {
                 // Perform action on click
 
-                EditText key_text = (EditText)findViewById(R.id.key_text);
-                Log.d("key Text : ",key_text.getText().toString());
+                EditText key_text = (EditText) findViewById(R.id.key_text);
+                Log.d("key Text : ", key_text.getText().toString());
                 String key = key_text.getText().toString();
 //                TextView message_content = (TextView)findViewById(R.id.message_content);
 //                String message = mMessageContentView.toString();
@@ -162,6 +165,57 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
 
                 // Showing Alert Dialog
                 alertDialog2.show();
+
+
+            }
+        });
+
+        final Button button2 = (Button) findViewById(R.id.verify_button);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+                String result = "";
+                EditText public_key_text = (EditText)findViewById(R.id.public_key_text);
+                Log.d("public key Text : ", public_key_text.getText().toString());
+                String publicKey = public_key_text.getText().toString();
+
+                String[] parts = publicKey.split("-");
+                BigInteger[] keys = new BigInteger[2];
+                keys[0] = new BigInteger(parts[0]);
+                keys[1] = new BigInteger(parts[1]);
+                Log.d("keys0 ", keys[0].toString());
+                Log.d("keys1 ", keys[1].toString());
+                try {
+                    boolean res = ECDSA.verify(tempMessage.getBytes(),keys);
+                    if(res == true){
+                        result = "success";
+                    }
+                    else
+                        result = "failed";
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+                Log.d("verify result ",result);
+                Context context = getContext();
+
+                AlertDialog.Builder alertDialog3 = new AlertDialog.Builder(context);
+
+                // Setting Dialog Title
+                alertDialog3.setTitle("Mail Verification");
+
+                // Setting Dialog Message
+                alertDialog3.setMessage("Verification " + result );
+
+                // Setting Positive "Yes" Btn
+                alertDialog3.setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+
+                // Showing Alert Dialog
+                alertDialog3.show();
 
 
 
