@@ -56,9 +56,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -655,6 +657,37 @@ public class MessageCompose extends K9Activity implements OnClickListener,
             setProgressBarIndeterminateVisibility(true);
             currentMessageBuilder.reattachCallback(this);
         }
+        final LinearLayout encLayout = (LinearLayout) findViewById(R.id.encryption);
+        final Switch encrypt_switch = (Switch) findViewById(R.id.encrypt_switch);
+        encrypt_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean on){
+                if(on)
+                {
+                    encLayout.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    encLayout.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+        final LinearLayout DSLayout = (LinearLayout) findViewById(R.id.digitalsignature);
+        Switch sign_switch = (Switch) findViewById(R.id.sign_switch);
+        sign_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean on){
+                if(on)
+                {
+                    DSLayout.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    DSLayout.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
 
     }
 
@@ -2802,10 +2835,26 @@ public class MessageCompose extends K9Activity implements OnClickListener,
         String key = key_text.getText().toString();
         TextView message_content = (TextView) findViewById(R.id.message_content);
         String message = message_content.getText().toString();
+        Log.d("result: ", message_content.getText().toString());
+        String mess = "";
+        String DSig = "";
+        if (message.contains("/")){
+            for (int i =0;i<message.length();i++){
+                if (i < message.indexOf("/")){
+                    mess+=message.charAt(i);
+                }
+                else{
+                    DSig+= message.charAt(i);
+                }
+            }
+        }else{
+            mess = message;
+        }
+
         BlockSliderChipper nbc = new BlockSliderChipper();
-        nbc.setPlainText(message);
+        nbc.setPlainText(mess);
         nbc.setKey(key);
-        String result = nbc.encrypt();
+        String result = nbc.encrypt()+ DSig;
         message_content.setText(result);
         Log.d("result: ", message_content.getText().toString());
     }

@@ -53,7 +53,7 @@ public class ECDSA {
 			System.out.println("Invalid public key.");
 			return false;
 		}
-		
+
 		String signature = "";
 		int i = message.length - 1;
 		while ('/' != (char) message[i]) {

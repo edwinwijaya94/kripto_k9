@@ -24,7 +24,11 @@ public class BlockSliderChipper {
     private Text text;
     private String result;
     private Block[] blocks;
-    
+
+
+    /**
+     * BSC Constructor
+     */
     public BlockSliderChipper() {
         key = new Key();
         text = new Text();
@@ -45,7 +49,12 @@ public class BlockSliderChipper {
             Logger.getLogger(BlockSliderChipper.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
+    /**
+     * Membagi menjadi masing-masing 16-bit
+     * @param bitKey Bit[]
+     * @return ArrayList of bit
+     */
     private ArrayList<Bit[]> divideBits(Bit[] bitKey) {
         ArrayList<Bit[]> result = new ArrayList<Bit[]>();
         for(int i=0; i<8; i++) {
@@ -59,7 +68,11 @@ public class BlockSliderChipper {
         }
         return result;
     }
-    
+
+    /**
+     * Melakukan encrypt terhadap Plain Text
+     * @return String cipherText
+     */
     public String encrypt() {
         ArrayList<Block> blocks = text.getBlocks();
         if(blocks.size() % 2 != 0) {
@@ -101,7 +114,11 @@ public class BlockSliderChipper {
         }
         return null;
     }
-    
+
+    /**
+     * Melakukan decrypt terhadap Cipher Text
+     * @return String Plain Text
+     */
     public String decrypt() {
         ArrayList<Block> blocks = text.getBlocks();
         Bit[] bitKey = key.getBits();
@@ -134,26 +151,6 @@ public class BlockSliderChipper {
             Logger.getLogger(BlockSliderChipper.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
-    }
-    
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        String text = "William Candy Angela";
-        System.out.println(text);
-        String key = "tubes";
-        BlockSliderChipper chipper = new BlockSliderChipper();
-        chipper.setPlainText(text);
-        chipper.setKey(key);
-        String result = chipper.encrypt();
-        System.out.println(result);
-        String encrypted = result;
-        BlockSliderChipper chipper2 = new BlockSliderChipper();
-        chipper2.setEncryptedText(encrypted);
-        chipper2.setKey("tubes");
-        String textResult = chipper2.decrypt();
-        System.out.println(textResult);
     }
     
 }

@@ -88,6 +88,7 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
     private Map<AttachmentViewInfo, AttachmentView> attachments = new HashMap<AttachmentViewInfo, AttachmentView>();
 
     private String tempMessage = "";
+    private String tempDS= "";
 
     // variable to hold context
     private Context context;
@@ -124,6 +125,7 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
                 nbc.setEncryptedText(tempMessage);
                 nbc.setKey(key);
                 String result = nbc.decrypt();
+                Log.d("result",result);
 //                mMessageContentView.setText(result);
 //                Log.d("result: ", mMessageContentView.toString());
 
@@ -178,6 +180,8 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
                 EditText public_key_text = (EditText)findViewById(R.id.public_key_text);
                 Log.d("public key Text : ", public_key_text.getText().toString());
                 String publicKey = public_key_text.getText().toString();
+                EditText key_text = (EditText) findViewById(R.id.key_text);
+                String key = key_text.getText().toString();
 
                 String[] parts = publicKey.split("-");
                 BigInteger[] keys = new BigInteger[2];
@@ -186,7 +190,27 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
                 Log.d("keys0 ", keys[0].toString());
                 Log.d("keys1 ", keys[1].toString());
                 try {
-                    boolean res = ECDSA.verify(tempMessage.getBytes(),keys);
+                    Log.d("1","1");
+                    BlockSliderChipper nbc = new BlockSliderChipper();
+                    Log.d("1","2");
+                    nbc.setEncryptedText(tempMessage);
+                    Log.d("tempMess", tempMessage);
+
+                    Log.d("key Text : ", key);
+                    Log.d("1","4");
+                    nbc.setKey(key);
+                    String oriMes= "";
+                    oriMes = nbc.decrypt();
+                    String oriFullMess = "";
+                    oriFullMess += oriMes;
+                    Log.d("oriFullMes",oriFullMess);
+                    for (int i =0;i< tempDS.length();i++){
+                        if (i >= tempDS.indexOf("/")){
+                            oriFullMess += tempDS.charAt(i);
+                        }
+                    }
+                    Log.d("sampai","sini");
+                    boolean res = ECDSA.verify(tempDS.getBytes(),keys);
                     if(res == true){
                         result = "success";
                     }
@@ -570,10 +594,18 @@ public class MessageContainerView extends LinearLayout implements OnClickListene
                 count++;
                 continue;
             }
+
             if (count == 1 && mText.charAt(i) != '<'){
-                tempMessage += mText.charAt(i);
+                tempDS += mText.charAt(i);
             } else if (count == 1 && mText.charAt(i) == '<'){
                 count++;
+            }
+        }
+        for (int i=0;i<tempDS.length()-1;i++) {
+            if (tempDS.charAt(i) != '/') {
+                tempMessage += tempDS.charAt(i);
+            } else {
+                break;
             }
         }
 

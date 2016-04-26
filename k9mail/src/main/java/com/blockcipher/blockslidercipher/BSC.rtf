@@ -1,0 +1,274 @@
+{\rtf\pard\plain\qj
+{\fonttbl
+ {\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+ {\f2\froman\fcharset238\fprq2 Times New Roman CE;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue192;\red0\green128\blue0;\red192\green0\blue64;}
+\f1\fs18
+\sbkpage
+{\par}
+{\f1\fs24 public class {\b com.blockcipher.blockslidercipher.BlockSliderChipper}\par\par}{\par}
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Constructors\cell 
+{\f1\cb1\cf2 \b public BlockSliderChipper()} \par 
+BSC Constructor \par
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+{\nowidctlpar\widctlpar\intbl\adjustright Methods\cell 
+{\f1\cb1\cf2 \b public void setPlainText(
+\par\tab String source)} \par 
+\par 
+{\f1\cb1\cf2 \b public void setEncryptedText(
+\par\tab String source)} \par 
+\par 
+{\f1\cb1\cf2 \b public void setKey(
+\par\tab String key)} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String encrypt()} \par 
+Melakukan encrypt terhadap Plain Text \par
+{\f1\cb1\cf3 \b Returns} \par 
+\tab String cipherText \par
+\par 
+{\f1\cb1\cf2 \b public java.lang.String decrypt()} \par 
+Melakukan decrypt terhadap Cipher Text \par
+{\f1\cb1\cf3 \b Returns} \par 
+\tab String Plain Text \par
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+{\par\par}
+{\par}
+{\f1\fs24 public class {\b com.blockcipher.Bits.Bit}\par\par}{\par}
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Constructors\cell 
+{\f1\cb1\cf2 \b public Bit()} \par 
+\par 
+{\f1\cb1\cf2 \b public Bit(
+\par\tab boolean value)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+{\nowidctlpar\widctlpar\intbl\adjustright Methods\cell 
+{\f1\cb1\cf2 \b public boolean getValue()} \par 
+\par 
+{\f1\cb1\cf2 \b public void setValue(
+\par\tab boolean value)} \par 
+\par 
+{\f1\cb1\cf2 \b public void setValue(
+\par\tab int value)} \par 
+\par 
+{\f1\cb1\cf2 \b public int convertToInt()} \par 
+\par 
+{\f1\cb1\cf2 \b public boolean isSameAs(
+\par\tab Bit b)} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String toString()} \par 
+\par 
+{\f1\cb1\cf2 \b public static void main(
+\par\tab String[] args)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+{\par\par}
+{\par}
+{\f1\fs24 public class {\b com.blockcipher.Bits.Block}\par\par}{Kelas ini untuk merepresentasikan block \par
+\par}
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Constructors\cell 
+{\f1\cb1\cf2 \b public Block()} \par 
+\par 
+{\f1\cb1\cf2 \b public Block(
+\par\tab Bit[] bits)} \par 
+\par 
+{\f1\cb1\cf2 \b public Block(
+\par\tab Block b)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+{\nowidctlpar\widctlpar\intbl\adjustright Methods\cell 
+{\f1\cb1\cf2 \b public int getSize()} \par 
+\par 
+{\f1\cb1\cf2 \b public com.blockcipher.Bits.Bit[] getBits()} \par 
+\par 
+{\f1\cb1\cf2 \b public void setBits(
+\par\tab Bit[] bits)} \par 
+\par 
+{\f1\cb1\cf2 \b public static int getDefaultSize()} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String toString()} \par 
+\par 
+{\f1\cb1\cf2 \b public void xor(
+\par\tab Block anotherBlock)} \par 
+Mengxor dirinya dengan block lain \par
+{\f1\cb1\cf3 \b Parameters} \par 
+\tab anotherBlock - block akan dixor dengan block ini \par
+\par 
+{\f1\cb1\cf2 \b public void fFunction(
+\par\tab Bit[] subKey)} \par 
+Melakukan fungsi f dengan key tertentu \par
+{\f1\cb1\cf3 \b Parameters} \par 
+\tab key - sub key dari kunci internal \par
+\par 
+{\f1\cb1\cf2 \b public void reverseFFunction(
+\par\tab Bit[] subKey)} \par 
+\par 
+{\f1\cb1\cf2 \b public static void main(
+\par\tab String[] args)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+{\par\par}
+{\par}
+{\f1\fs24 public class {\b com.blockcipher.Bits.ByteConverter}\par\par}{Kelas untuk mengconvert byte menjadi bit dan sebaliknya \par
+\par}
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Constructors\cell 
+{\f1\cb1\cf2 \b public ByteConverter()} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+{\nowidctlpar\widctlpar\intbl\adjustright Methods\cell 
+{\f1\cb1\cf2 \b public int twoPower(
+\par\tab int i)} \par 
+\par 
+{\f1\cb1\cf2 \b public byte convertBitsToByte(
+\par\tab Bit[] bits)} \par 
+\par 
+{\f1\cb1\cf2 \b public com.blockcipher.Bits.Bit[] convertByteToBits(
+\par\tab byte bytee)} \par 
+\par 
+{\f1\cb1\cf2 \b public void printBitArray(
+\par\tab Bit[] bits)} \par 
+\par 
+{\f1\cb1\cf2 \b public static void main(
+\par\tab String[] args)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+{\par\par}
+{\par}
+{\f1\fs24 public class {\b com.blockcipher.Bits.Key}\par\par}{\par}
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Constructors\cell 
+{\f1\cb1\cf2 \b public Key()} \par 
+\par 
+{\f1\cb1\cf2 \b public Key(
+\par\tab String key, 
+\par\tab int size)} \par 
+Consructor \par
+{\f1\cb1\cf3 \b Parameters} \par 
+\tab key - string key yang ingin diubah menjadi array of bit \par
+\tab size - panjang key yang seharusnya, dalam bit = 128 bit \par
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+{\nowidctlpar\widctlpar\intbl\adjustright Methods\cell 
+{\f1\cb1\cf2 \b public int getSize()} \par 
+\par 
+{\f1\cb1\cf2 \b public com.blockcipher.Bits.Bit[] getBits()} \par 
+\par 
+{\f1\cb1\cf2 \b public com.blockcipher.Bits.Block[] getKeyBlock()} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String getKeyText()} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String getEncryptedText()} \par 
+\par 
+{\f1\cb1\cf2 \b public void setEncryptedKey()} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String toString()} \par 
+\par 
+{\f1\cb1\cf2 \b public void setKey(
+\par\tab String key, 
+\par\tab int s)} \par 
+mengubah string menjadi bits \par
+{\f1\cb1\cf3 \b Parameters} \par 
+\tab key - String key yang ingin diubah menjadi array of bit \par
+\tab s - panjang key yang seharusnya, dalam bit = 128 bit \par
+\par 
+{\f1\cb1\cf2 \b public com.blockcipher.Bits.Bit[] concat(
+\par\tab Bit[] a, 
+\par\tab Bit[] b)} \par 
+\par 
+{\f1\cb1\cf2 \b public static void main(
+\par\tab String[] args)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+{\par\par}
+{\par}
+{\f1\fs24 public class {\b com.blockcipher.Bits.Text}\par\par}{\par}
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Constructors\cell 
+{\f1\cb1\cf2 \b public Text()} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+{\nowidctlpar\widctlpar\intbl\adjustright Methods\cell 
+{\f1\cb1\cf2 \b public com.blockcipher.Bits.Bit[] concat(
+\par\tab Bit[] a, 
+\par\tab Bit[] b)} \par 
+\par 
+{\f1\cb1\cf2 \b public java.util.ArrayList getBlocks()} \par 
+\par 
+{\f1\cb1\cf2 \b public void setBlocks(
+\par\tab ArrayList blocks)} \par 
+\par 
+{\f1\cb1\cf2 \b public void setEncryptedText(
+\par\tab String text)} \par 
+\par 
+{\f1\cb1\cf2 \b public void setPlainText(
+\par\tab String text)} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String toString()} \par 
+\par 
+{\f1\cb1\cf2 \b public java.lang.String getEncryptedText()} \par 
+Ubah dari blocks ke string \par
+{\f1\cb1\cf3 \b Returns} \par 
+\tab string dari sekumpulan blocks \par
+\par 
+{\f1\cb1\cf2 \b public java.lang.String getPlainText()} \par 
+Ubah dari blocks ke string \par
+{\f1\cb1\cf3 \b Returns} \par 
+\tab string dari sekumpulan blocks \par
+\par 
+{\f1\cb1\cf2 \b public java.lang.String bytesToHex(
+\par\tab byte[] bytes)} \par 
+\par 
+{\f1\cb1\cf2 \b public byte[] hexStringToByteArray(
+\par\tab String s)} \par 
+\par 
+{\f1\cb1\cf2 \b public static void main(
+\par\tab String[] args)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Fields\cell 
+{\f1\cb1\cf2 \b protected static final hexArray} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard 
+{\par\par}
+{\par}
+{\f1\fs24 public class {\b com.blockcipher.encrypt.VigenereCipher}\par\par}{\par}
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+\nowidctlpar\widctlpar\intbl\adjustright {Constructors\cell 
+{\f1\cb1\cf2 \b public VigenereCipher()} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+\trowd \trgaph70 \cellx1536 \cellx9142\pard\qj 
+{\nowidctlpar\widctlpar\intbl\adjustright Methods\cell 
+{\f1\cb1\cf2 \b public java.lang.String Encrypt(
+\par\tab String plaintext, 
+\par\tab String key, 
+\par\tab int charSize)} \par 
+Melakukan encrypt terhadap plaintext dengan suatu key \par
+{\f1\cb1\cf3 \b Parameters} \par 
+\tab plaintext - String \par
+\tab key - String \par
+\tab charSize - int \par
+{\f1\cb1\cf3 \b Returns} \par 
+\tab String Cipher Text \par
+\par 
+{\f1\cb1\cf2 \b public java.lang.String Decrypt(
+\par\tab String ciphertext, 
+\par\tab String key, 
+\par\tab int charSize)} \par 
+Melakukan decrypt terhadap Cipher Text dengan suatu key \par
+{\f1\cb1\cf3 \b Parameters} \par 
+\tab ciphertext - String \par
+\tab key - String \par
+\tab charSize - int \par
+{\f1\cb1\cf3 \b Returns} \par 
+\tab String Plain Text \par
+\par 
+{\f1\cb1\cf2 \b public int floorMod(
+\par\tab int a, 
+\par\tab int b)} \par 
+\par 
+{\f1\cb1\cf2 \b public int mod(
+\par\tab int a, 
+\par\tab int b)} \par 
+\cell }\pard \nowidctlpar\widctlpar\intbl\adjustright {\row }\pard\qj 
+{\par\par}
+}

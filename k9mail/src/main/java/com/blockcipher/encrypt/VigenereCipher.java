@@ -10,7 +10,14 @@ package com.blockcipher.encrypt;
  * @author Edwin
  */
 public class VigenereCipher {
-    
+
+    /**
+     * Melakukan encrypt terhadap plaintext dengan suatu key
+     * @param plaintext String
+     * @param key String
+     * @param charSize int
+     * @return String Cipher Text
+     */
     public String Encrypt(String plaintext, String key, int charSize){
         String res="";
         int j=0;
@@ -28,7 +35,14 @@ public class VigenereCipher {
         }
         return res;
     }
-    
+
+    /**
+     * Melakukan decrypt terhadap Cipher Text dengan suatu key
+     * @param ciphertext String
+     * @param key String
+     * @param charSize int
+     * @return String Plain Text
+     */
     public String Decrypt(String ciphertext, String key, int charSize){
         String res="";
         int j=0;

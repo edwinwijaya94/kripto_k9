@@ -75,11 +75,36 @@
                 />
 
             <!-- Encryption Feature-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.64">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Encrypt"
+                    android:id="@+id/encrypt_switch"
+                    android:checked="false" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Sign"
+                    android:id="@+id/sign_switch"
+                    android:checked="false" />
+            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/encryption"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="invisible">
                 <EditText
                     android:layout_width="240dp"
                     android:layout_height="match_parent"
@@ -101,7 +126,8 @@
                 android:id="@+id/digitalsignature"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="invisible">
                 <EditText
                     android:layout_width="240dp"
                     android:layout_height="match_parent"
